@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "skillName": "Express",
+        "skillImage": "https://i.ibb.co/WNLRwkgH/download-1.png"
+    },
+    {
+        "id": 2,
+        "skillName": "MongoDB",
+        "skillImage": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+    },
+    {
+        "id": 3,
+        "skillName": "Firebase",
+        "skillImage": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+    },
+    {
+        "id": 4,
+        "skillName": "NodeJS",
+        "skillImage": "https://i.ibb.co.com/Y4F0t07R/download.pngg"
+    }
+]

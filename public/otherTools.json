@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "skillName": "Git",
+        "skillImage": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+    },
+    {
+        "id": 2,
+        "skillName": "GitHub",
+        "skillImage": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+    },
+    {
+        "id": 3,
+        "skillName": "Vercel",
+        "skillImage": "https://assets.vercel.com/image/upload/v1662130559/front/favicon/vercel/180x180.png"
+    },
+    {
+        "id": 4,
+        "skillName": "Netlify",
+        "skillImage": "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
+    },
+    {
+        "id": 5,
+        "skillName": "Firebase Hosting",
+        "skillImage": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+    },
+    {
+        "id": 6,
+        "skillName": "Figma",
+        "skillImage": "https://i.ibb.co/WWVzcTVX/figma-5968705.png"
+    }
+]

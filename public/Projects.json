@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "projecttittle": "Pet Adoption Platform",
+        "ProjectLogo": "https://i.ibb.co/d4FJcpGW/Paw-s-Home-Logo-with-Vibrant-Compassionate-Design.png",
+        "ProjectDescription": "PetAdopt is a dynamic and responsive web application built with the MERN stack that connects pet lovers with animals in need of forever homes. It empowers users to browse adoptable pets, request adoptions, create donation campaigns, and contribute to causes close to their hearts. Admins manage the platform efficiently through dedicated tools and analytics, while the design ensures accessibility, responsiveness, and aesthetic appeal.",
+        "ProjectBannerImages": "https://i.ibb.co.com/rKMbRdC5/Screenshot-2025-08-15-001809.png",
+        "ProjectBestPageImage": [
+            "https://i.ibb.co.com/b5NP4Gcm/screencapture-pawhome-netlify-app-2025-08-13-01-17-42.png",
+            "https://i.ibb.co.com/fdcWLVsb/screencapture-pawhome-netlify-app-donations-2025-08-13-01-01-21.png",
+            "https://i.ibb.co.com/rRQZZvCS/screencapture-pawhome-netlify-app-dashboard-2025-08-13-01-14-26.png",
+            "https://i.ibb.co.com/SwsNjK4J/screencapture-pawhome-netlify-app-dashboard-admin-dashboard-2025-08-13-01-20-24.png"
+        ],
+        "images": [
+            "https://i.ibb.co/5xh6Q034/Screenshot-2025-07-28-224654.png",
+            "https://i.ibb.co/LdtLvwfW/Screenshot-2025-07-28-224557.png"
+        ],
+        "technology": [
+            "React",
+            "Express",
+            "MongoDB",
+            "Stripe",
+            "JWT",
+            "Tailwind",
+            "TanStack Query"
+        ],
+        "liveLink": "https://pawhome.netlify.app",
+        "githubClient": "https://github.com/Arpan-Dey-Web/PetCare-Project-Client-Side",
+        "githubServer": "https://github.com/Arpan-Dey-Web/PetCare-Project-Server-Side",
+        "features": [
+            "🔒 Role-Based Auth with Firebase & JWT",
+            "💳 Stripe Integration for Donations",
+            "🧾 User Dashboard: Manage Pets, Campaigns, Adoption Requests",
+            "🛡️ Admin Dashboard: Full Platform Control",
+            "📷 Image Upload via imgbb API",
+            "📜 WYSIWYG Editor for Campaigns (Tiptap)",
+            "💫 Skeleton Loaders, Smooth Animations, Modern UI",
+            "🔍 Search, Filter, and Sort Pets by Category"
+        ],
+        "challengeFaces": [
+            "Implementing role-based dashboard access for  admins and general users",
+            "implement Dashboard layout and its design",
+            "Stripe Payment method Integreate"
+        ],
+        "futurePlans": [
+            "integreating three JS for animations",
+            "integreate Ai chatbot",
+            "integreate SSL commerce for bangldesh payment method"
+        ],
+        "license": "Educational Use — Built with ❤️ by Arpan"
+    },
+    {
+        "id": 2,
+        "projecttittle": "InnerSelf",
+        "ProjectLogo": "https://i.ibb.co.com/GgH2WsF/logo-Cfe-MJKe-K.png",
+        "ProjectDescription": "Welcome to innerSelf, where passions bloom and kindred spirits gather! A platform to find, join, or create local hobby groups — be it painting by the lake, hiking in the hills, or crafting in cozy corners. innerSelf connects hearts through shared intere0sts, sparking friendship and community.",
+        "ProjectBannerImages": "https://i.ibb.co.com/YBdVLMW8/Screenshot-2025-08-15-001915.png",
+        "ProjectBestPageImage": [
+            "https://i.ibb.co.com/7JQ4w8ZJ/screencapture-innerself-netlify-app-2025-08-14-19-06-12.png",
+            "https://i.ibb.co.com/Jwnfx2ML/screencapture-innerself-netlify-app-all-Groups-2025-08-14-19-08-55.png",
+            "https://i.ibb.co.com/mrmN0Yp4/screencapture-innerself-netlify-app-my-Groups-arponthelearner-gmail-com-2025-08-14-19-09-24.png",
+            "https://i.ibb.co.com/WvZ4Qsg2/screencapture-innerself-netlify-app-dashboard-2025-08-14-19-09-35.png"
+        ],
+      
+        "technology": [
+            "React",
+            "MongoDB",
+            "Express",
+            "Tailwind",
+            "React Router",
+            "JWT"
+        ],
+        "liveLink": "https://innerself.netlify.app/",
+        "githubClient": "https://github.com/Arpan-Dey-Web/Innerself",
+        "githubServer": "https://github.com/Arpan-Dey-Web/Innerself-server",
+        "features": [
+            "🎭 Group Discovery & Creation",
+            "🔐 Protected Routes",
+            "📅 Smart Validation",
+            "🔥 Sleek UI & Responsive Design",
+            "🍃 Theme Toggle",
+            "✨ Enhanced UI Libraries"
+        ],
+        "challengeFaces": [
+            "Implementing CRUD operations",
+            "implement jwt implement for user"
+        ],
+        "futurePlans": [
+            "integreate gsap for animations",
+            "integreate little bit gaming here",
+            "integreate SSL commerce for bangldesh payment method"
+        ],
+        "license": "Educational Use - Crafted by Arpan ❤️"
+    },
+    {
+        "id": 3,
+        "projecttittle": "Restaurant Management ",
+        "ProjectLogo": "https://i.ibb.co.com/Kn84qhY/Logo-Bn-CCn-BOX.png",
+        "ProjectDescription": " A full-featured MERN Stack Restaurant Management system built to streamline food service operations, enhance customer interaction, and modernize the dining experience — all wrapped in a responsive and recruiter-friendly UI.",
+       "ProjectBannerImages": "https://i.ibb.co.com/CptJfX2F/Screenshot-2025-08-15-001955.png",
+        "ProjectBestPageImage": [
+            "https://i.ibb.co.com/yngCnyPD/screencapture-epiqdine-netlify-app-2025-08-14-19-17-30.png",
+            "https://i.ibb.co.com/1JhppJLp/screencapture-epiqdine-netlify-app-all-Foods-2025-08-14-19-17-54.png",
+            "https://i.ibb.co.com/x83Pbn1F/screencapture-epiqdine-netlify-app-gallery-2025-08-14-19-18-25.png",
+            "https://i.ibb.co.com/jv7W1YNW/screencapture-epiqdine-netlify-app-myorder-arponthelearner-gmail-com-2025-08-14-19-19-34.png"
+        ],
+        
+        "technology": [
+            "React",
+            "Express",
+            "MongoDB",
+            "Tailwind",
+            "Framer Motion",
+            "JWT",
+            "TanStack Query"
+        ],
+        "liveLink": "https://epiqdine.netlify.app/",
+        "githubClient": "https://github.com/Arpan-Dey-Web/Resturent-food-project?tab=readme-ov-file",
+        "githubServer": "https://github.com/Arpan-collab/restaurant-server",
+        "features": [
+            "🍽️ Full-featured MERN Stack Food Ordering",
+            "✅ Public & Private Pages",
+            "🧾 Purchase Restriction Logic (stock, ownership)",
+            "🔍 Search Functionality",
+            "🧠 Smart Routing: No reload errors on Private Routes",
+            "🔥 JWT-secured API with proper credentials",
+            "📦 TanStack Query for State & Data Management",
+            "🧠 Conditional Navigation & Profile Dropdown"
+        ],
+        "challengeFaces": [
+            "Secure api with jwt ",
+            "implement Dashboard layout and its design",
+            "implement tanstack query"
+        ],
+        "futurePlans": [
+            "Track user food which he ordered",
+            "integreate Ai chatbot",
+            "integreate SSL commerce for bangldesh payment method"
+        ],
+        "license": "Educational Use — Built with ❤️ by Arpan"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "skillName": "NextJS",
+        "skillImage": "https://img.icons8.com/?size=48&id=MWiBjkuHeMVq&format=png"
+    },
+    {
+        "id": 2,
+        "skillName": "React",
+        "skillImage": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+    },
+    {
+        "id": 3,
+        "skillName": "JavaScript",
+        "skillImage": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    },
+    {
+        "id": 4,
+        "skillName": "React Router",
+        "skillImage": "https://i.ibb.co/yFfLHj5s/Simpleicons-Team-Simple-Reactrouter-512.png"
+    },
+    {
+        "id": 5,
+        "skillName": "Tailwind",
+        "skillImage": "https://i.ibb.co/3mv0D0vH/download.png"
+    },
+    {
+        "id": 6,
+        "skillName": "ShadCN",
+        "skillImage": "https://avatars.githubusercontent.com/u/139895814?s=200&v=4"
+    }
+]
