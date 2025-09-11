@@ -1,39 +1,37 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import Link from "next/link";
 
+// Define types for your environment variables
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
-const ContactPage = () => {
-  const form = useRef();
+const ContactPage: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_service_id, 
-        import.meta.env.VITE_template_id, 
-        form.current,
-         import.meta.env.VITE_Public_Key 
-      )
-      .then(
-        () => {
-          toast.success("✅ Message sent successfully!");
-          form.current.reset();
-        },
-        (error) => {
-          toast.error("❌ Failed to send message. Please try again later.");
-          // console.error(error);
-        }
-      );
+    if (!form.current) return;
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      () => {
+        toast.success("✅ Message sent successfully!");
+        form.current?.reset();
+      },
+      () => {
+        toast.error("❌ Failed to send message. Please try again later.");
+      }
+    );
   };
 
   return (
-    <div className=" max-w-4xl mx-auto px-4 py-12">
+    <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold primary mb-4 ">Get in Touch</h1>
+        <h1 className="text-4xl font-bold primary mb-4">Get in Touch</h1>
         <p className="text-lg text">
           I'm open to collaborations, opportunities, or just a friendly chat.
         </p>
@@ -41,8 +39,8 @@ const ContactPage = () => {
 
       <div className="grid md:grid-cols-2 gap-8">
         {/* Contact Information */}
-        <div className="card p-8 flex flex-col  justify-center">
-          <h2 className="text-2xl font-semibold primary mb-4 ">Arpan Dey</h2>
+        <div className="card p-8 flex flex-col justify-center">
+          <h2 className="text-2xl font-semibold primary mb-4">Arpan Dey</h2>
           <p className="text mb-6">
             MERN stack developer
             <br />
@@ -104,7 +102,7 @@ const ContactPage = () => {
               <textarea
                 name="message"
                 id="message"
-                rows="4"
+                rows={4}
                 placeholder="Your message..."
                 required
                 className="w-full px-4 py-2 border border-cyber-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-cyber-primary background text"
@@ -113,13 +111,14 @@ const ContactPage = () => {
 
             <button
               type="submit"
-              className="btn rounded-full  text-white bg-gray-600 glow glow-hover rounded-6xl  px-8 py-2 glow-hover w-full"
+              className="btn rounded-full text-white bg-gray-600 glow glow-hover px-8 py-2 w-full"
             >
               Send Message
             </button>
           </form>
         </div>
       </div>
+
       <ToastContainer
         position="top-right"
         autoClose={5000}

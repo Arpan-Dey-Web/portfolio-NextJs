@@ -6,6 +6,26 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { redirect } from "next/navigation";
+import Image from "next/image";
+
+// ✅ Define project type
+type ProjectType = {
+  id: number;
+  projecttittle: string;
+  technology: string[];
+  liveLink: string;
+  githubClient: string;
+  githubServer?: string;
+  features: string[];
+  license?: string;
+  images?: string[];
+  ProjectLogo?: string;
+  ProjectBestPageImage: string[];
+  ProjectDescription: string;
+  ProjectBannerImages?: string[];
+  challengeFaces: string[];
+  futurePlans: string[];
+};
 const SingleProject = ({ projectsid }) => {
   const { id } = useParams();
 
@@ -97,7 +117,7 @@ const SingleProject = ({ projectsid }) => {
               </div>
 
               <div className="w-full h-68 mb-10 rounded-2xl  ">
-                <img
+                <Image
                   src={ProjectBestPageImage[2] ? ProjectBestPageImage[2] : ""}
                   alt="Project"
                   className="w-full rounded-2xl h-68"
@@ -105,7 +125,7 @@ const SingleProject = ({ projectsid }) => {
               </div>
 
               <div className="w-full h-68  mb-10 rounded-2xl ">
-                <img
+                <Image
                   src={ProjectBestPageImage[3] ? ProjectBestPageImage[3] : ""}
                   alt="Project"
                   className="w-full rounded-2xl h-68 "

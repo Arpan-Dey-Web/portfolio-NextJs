@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -20,9 +21,11 @@ const ProjectCard = ({ project }) => {
   return (
     <div className=" rounded-2xl  max-w-md mx-auto shadow-2xl card ">
       <div className="mb-2 rounded-t-lg overflow-hidden ">
-        <img
+        <Image
           src={ProjectBannerImages}
           alt={projecttittle}
+          height={400}
+          width={400}
           className="w-full h-50 object-cover "
         />
       </div>
@@ -30,9 +33,11 @@ const ProjectCard = ({ project }) => {
       <div className="p-6">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-12 h-16 rounded-lg flex items-center justify-center">
-            <img
+            <Image
               className=" rounded-full"
               src={ProjectLogo}
+              height={400}
+              width={400}
               alt="Project logo"
             />
           </div>

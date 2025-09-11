@@ -7,7 +7,6 @@ export default function LenisProvider({ children }) {
     const lenis = new Lenis({
       duration: 1.3,
       smoothWheel: true,
-      smoothTouch: false,
     });
 
     function raf(time) {

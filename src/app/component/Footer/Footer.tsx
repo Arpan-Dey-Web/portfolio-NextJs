@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import Mylogo from "../Mylogo/Mylogo";
 import { SiGmail } from "react-icons/si";
