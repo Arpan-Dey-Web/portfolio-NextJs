@@ -23,7 +23,7 @@ const Banner = () => {
       <div className="mt-10 md:mt-0 text-center md:text-left">
         <div className=" md:text-5xl font-bold mb-6">
           <span className="text-white text-2xl md:text-3xl mb-6 ">
-            Hello, I'm{" "}
+            Hello, I am{" "}
           </span>{" "}
           <br />
           <h1 className="primary  text-4xl md:text-5xl lg:text-6xl  mt-6">
@@ -51,11 +51,11 @@ const Banner = () => {
         </div>
 
         <div className="text-lg text-opacity-80 mb-10 max-w-xl text ">
-          <p className="mb-3">"Build. Break. Learn. Repeat"</p>
+          <p className="mb-3">Build. Break. Learn. Repeat</p>
           <p className="mb-3 ">
-            "Think In Logic, Speak In Design, Dream In Code"
+            Think In Logic, Speak In Design, Dream In Code
           </p>
-          <p>"A Developer Not By Title, But By Mindset"</p>
+          <p>A Developer Not By Title, But By Mindset</p>
         </div>
 
         {/* Social Links */}
@@ -89,7 +89,7 @@ const Banner = () => {
           </Link>
         </div>
 
-        <div className="mt-10 rounded-full flex gap-6 ">
+        <div className="mt-10 flex gap-6 ">
           {/* contact */}
           <button
             className="btn rounded-full text-white px-8 py-2 bg-[#DE2A8A] glow glow-hover"
@@ -103,7 +103,7 @@ const Banner = () => {
           </button>
           <button
             onClick={handleDownload}
-            className="btn rounded-full  text-white bg-gray-600 glow glow-hover rounded-6xl  px-8 py-2"
+            className="btn rounded-full  text-white bg-gray-600 glow glow-hover   px-8 py-2"
           >
             Download CV
           </button>
@@ -115,7 +115,7 @@ const Banner = () => {
         {/* Image Container */}
         <div className="rounded-full shadow-[0_0_25px_rgba(77,121,255,0.7),0_0_50px_rgba(255,45,117,0.4)] bg-gradient-to-tr  from-cyber-primary/20  via-transparent  to-cyber-accent/20 backdrop-blur-sm border-2 border-transparent border-opacity-30 hover:border-cyber-accent transition-all duration-300">
           <Image
-          className=" h-[280px] w-[280px] md:h-[350px] md:w-[350px] lg:h-[400px] lg:w-[400px] rounded-full  object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-500 "
+            className=" h-[280px] w-[280px] md:h-[350px] md:w-[350px] lg:h-[400px] lg:w-[400px] rounded-full  object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-500 "
             height={400}
             width={400}
             src={bannerImage}

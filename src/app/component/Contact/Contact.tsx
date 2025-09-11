@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold primary mb-4">Get in Touch</h1>
         <p className="text-lg text">
-          I'm open to collaborations, opportunities, or just a friendly chat.
+          I am open to collaborations, opportunities, or just a friendly chat.
         </p>
       </div>
 

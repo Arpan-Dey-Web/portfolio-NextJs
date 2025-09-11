@@ -9,41 +9,40 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 
 // ✅ Define project type
-type ProjectType = {
-  id: number;
+type Project = {
+  id: number; // <-- add this
   projecttittle: string;
   technology: string[];
-  liveLink: string;
-  githubClient: string;
+  liveLink?: string;
+  githubClient?: string;
   githubServer?: string;
   features: string[];
   license?: string;
   images?: string[];
   ProjectLogo?: string;
-  ProjectBestPageImage: string[];
+  ProjectBestPageImage?: string[];
   ProjectDescription: string;
   ProjectBannerImages?: string[];
-  challengeFaces: string[];
-  futurePlans: string[];
+  challengeFaces?: string[];
+  futurePlans?: string[];
 };
+
 const SingleProject = ({ projectsid }) => {
   const { id } = useParams();
 
-  const [project, setProject] = useState([]);
+  const [project, setProject] = useState<Project | null>(null);
 
   useEffect(() => {
     fetch("/Projects.json")
       .then((res) => res.json())
-      .then(async (data) => {
-        const found = await data.find(
-          (item) => item.id === parseInt(projectsid)
-        );
-        setProject(found);
+      .then((data: Project[]) => {
+        const found = data.find((item) => item.id === parseInt(projectsid));
+        setProject(found || null);
       })
-      .catch((err) => setProject([]));
-  }, [id]);
+      .catch(() => setProject(null));
+  }, [id, projectsid]);
 
-  if (project?.length == 0) {
+  if (!project) {
     return <div>Nothing to show</div>;
   }
 

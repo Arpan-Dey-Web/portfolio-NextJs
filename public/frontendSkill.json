@@ -6,19 +6,20 @@
     },
     {
         "id": 2,
+        "skillName": "Typescript",
+        "skillImage": "https://i.ibb.co.com/pj1NCCWQ/download.png"
+    },
+    {
+        "id": 3,
         "skillName": "React",
         "skillImage": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
     },
     {
-        "id": 3,
+        "id": 4,
         "skillName": "JavaScript",
         "skillImage": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
     },
-    {
-        "id": 4,
-        "skillName": "React Router",
-        "skillImage": "https://i.ibb.co/yFfLHj5s/Simpleicons-Team-Simple-Reactrouter-512.png"
-    },
+ 
     {
         "id": 5,
         "skillName": "Tailwind",

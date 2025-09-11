@@ -61,7 +61,7 @@ const Navbar = () => {
             </div>
 
             <ScrollLink to="home" {...scrollProps} className="flex-shrink-0">
-              <Mylogo className="h-10 w-auto cursor-pointer hover:opacity-80 transition-opacity" />
+              <Mylogo />
             </ScrollLink>
           </div>
 
