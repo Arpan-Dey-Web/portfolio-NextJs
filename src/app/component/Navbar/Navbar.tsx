@@ -2,7 +2,14 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Mylogo from "../Mylogo/Mylogo";
-import { FaHome, FaUser, FaTools, FaCode, FaEnvelope } from "react-icons/fa";
+import {
+  FaHome,
+  FaUser,
+  FaTools,
+  FaCode,
+  FaEnvelope,
+  FaGraduationCap,
+} from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,6 +18,7 @@ const Navbar = () => {
     { name: "about", icon: FaUser },
     { name: "skills", icon: FaTools },
     { name: "projects", icon: FaCode },
+    { name: "certificate", icon: FaGraduationCap },
     { name: "contact", icon: FaEnvelope },
   ];
 
@@ -72,8 +80,8 @@ const Navbar = () => {
                 <ScrollLink
                   key={item.name}
                   to={item.name}
-                  {...scrollProps} // <-- Corrected: This passes all your scroll props
-                  className="text capitalize text-sm font-medium px-3 py-2 relative group cursor-pointer transition-all duration-300 flex items-center"
+                  {...scrollProps} 
+                  className="text capitalize  font-medium px-3 py-2 relative group cursor-pointer transition-all duration-300 flex items-center"
                 >
                   {/* Icon and text container */}
                   <span className="flex items-center">

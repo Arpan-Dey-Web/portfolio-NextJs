@@ -119,6 +119,8 @@ const SingleProject = ({ projectsid }) => {
                 <Image
                   src={ProjectBestPageImage[2] ? ProjectBestPageImage[2] : ""}
                   alt="Project"
+                  width={400}
+                  height={400}
                   className="w-full rounded-2xl h-68"
                 />
               </div>
@@ -127,6 +129,8 @@ const SingleProject = ({ projectsid }) => {
                 <Image
                   src={ProjectBestPageImage[3] ? ProjectBestPageImage[3] : ""}
                   alt="Project"
+                  width={400}
+                  height={400}
                   className="w-full rounded-2xl h-68 "
                 />
               </div>

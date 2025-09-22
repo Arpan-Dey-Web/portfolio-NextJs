@@ -5,6 +5,7 @@ import AboutMe from "./component/AboutMe/AboutMe";
 import Skills from "./component/Skills/Skills";
 import Projects from "./component/Projects/Projects";
 import ContactPage from "./component/Contact/Contact";
+import Certificate from "./component/Certification/Certificate";
 
 export default function Home() {
   return (
@@ -20,9 +21,15 @@ export default function Home() {
       <section id="skills">
         <Skills />
       </section>
+
       <section id="projects">
         <Projects />
       </section>
+
+      <section id="certificate">
+        <Certificate />
+      </section>
+
       <section id="contact">
         <ContactPage />
       </section>

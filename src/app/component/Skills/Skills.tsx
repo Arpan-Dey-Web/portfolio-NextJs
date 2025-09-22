@@ -39,7 +39,7 @@ const Skills = () => {
 
         {/* other tools */}
         <div className="flex flex-col text-center  p-4">
-          <h1 className="mb-5 text-xl font-semibold accent">Other Tools</h1>
+          <h1 className="mb-5 text-xl font-semibold accent">Tools</h1>
           <div className="flex-1">
             <OtherSkills />
           </div>

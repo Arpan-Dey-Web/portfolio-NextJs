@@ -15,17 +15,8 @@ const AboutMe = () => {
       </header>
 
       <article>
-        <p className=" leading-relaxed text-lg tracking-wide  text text-justify ">
-          {/* I am Arpan, a dedicated developer who embraces every new technology
-          with calm confidence. My approach is simple: learn relentlessly, code
-          thoughtfully, and deliver excellence. I see every challenge as a
-          stepping stone for growth, welcoming change and complexity as
-          catalysts for improvement. Fueled by curiosity and persistence, I
-          continuously refine my skills to adapt and innovate. I believe every
-          project is an opportunity to connect people and innovate through
-          technology. My goal is to build seamless digital experiences that are
-          as efficient as they are elegant. */}
-          I’m Arpan Dey, a dedicated developer who embraces new technologies
+        <p className=" leading-relaxed text-lg tracking-wide  text text-justify  ">
+          I am Arpan Dey, a dedicated developer who embraces new technologies
           with calm confidence. My programming journey began with HTML and CSS
           experiments, growing into a passion for building responsive,
           user-friendly web applications using JavaScript, ReactJS, and the MERN
