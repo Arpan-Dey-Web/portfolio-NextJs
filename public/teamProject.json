@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "projecttittle": "AI Job Tracker",
+        "ProjectLogo": "https://i.ibb.co/7zt95dT/ai-job-tracker-logo.png",
+        "ProjectDescription": "AI Job Tracker is an AI-powered web application designed to help users track job applications, analyze resumes, and match job descriptions with required skills. It provides an intelligent dashboard to manage the entire job-hunting journey with AI assistance and modern analytics.",
+        "ProjectBannerImages": "https://i.ibb.co/njt5g6d/ai-job-tracker-banner.png",
+        "ProjectBestPageImage": [
+            "https://i.ibb.co/dcdkM8T/job-tracker-dashboard.png",
+            "https://i.ibb.co/QN3xk92/resume-analyzer.png",
+            "https://i.ibb.co/LhC0pq8/job-matcher.png",
+            "https://i.ibb.co/m8Lk9rR/analytics-page.png"
+        ],
+        "images": [
+            "https://i.ibb.co/DK8mkX1/authentication.png",
+            "https://i.ibb.co/Zh7xHDh/job-form.png"
+        ],
+        "technology": [
+            "Next JS",
+            "TypeScript",
+            "TailwindCSS",
+            "shadcn/ui",
+            "Prisma",
+            "Supabase (PostgreSQL)",
+            "Clerk",
+            "OpenAI API",
+            "Vercel"
+        ],
+        "liveLink": "https://ai-job-tracker.vercel.app",
+        "githubClient": "https://github.com/soyebcodes/ai-job-application-tracker",
+        "githubServer": "",
+        "features": [
+            "🔐 Authentication with Google/GitHub via NextAuth",
+            "📂 Job Application Tracker with CRUD and filtering",
+            "📄 Resume Upload & Storage (PDF) with Supabase",
+            "🤖 AI Resume Analyzer powered by OpenAI",
+            "📊 Job Description Matcher highlighting missing skills",
+            "📈 Dashboard with application success rate & analytics",
+            "⚡  Responsive UI with TailwindCSS + shadcn/ui",
+            "🌐  Deployment on Vercel with Supabase backend"
+        ],
+        "challengeFaces": [
+            "Integrating AI-powered resume and job description comparison",
+            "Implementing secure authentication with OAuth providers",
+            "Designing reusable and responsive UI components with shadcn/ui"
+        ],
+        "futurePlans": [
+            "Add cover letter AI generator",
+            "Integrate LinkedIn job import feature",
+            "Advanced analytics with success prediction",
+            "Mobile app version with React Native"
+        ],
+        "license": "Educational Use — Built with ❤️ by Team (Frontend UI by Arpan)"
+    }
+]

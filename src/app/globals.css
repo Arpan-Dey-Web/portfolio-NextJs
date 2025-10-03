@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
-html,
-body {
-  font-family: "Fira Code", monospace;
+
+/* html, body {
+  font-family: "Nunito", sans-serif !important;
+} */
+.nunito-font {
+  font-family: "Nunito", sans-serif;
 }
 
-.roboto-font {
-  font-family: "Roboto", sans-serif;
+.merinda-font {
+  font-family: "Merienda", cursive;
 }
 /* Background & Base Colors */
 .background {
@@ -25,6 +28,20 @@ body {
       transparent 70%
     );
   background-size: 32px 32px, 32px 32px, 100% 100%;
+}
+
+.name-gradient {
+  background: linear-gradient(90deg, #4d79ff, #ff2d75);
+  -webkit-background-clip: text; /* Chrome, Safari */
+  -webkit-text-fill-color: transparent; /* Chrome, Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  border: 4px solid; /* must define border width and style */
+  border-image: linear-gradient(45deg, #4d79ff, #ff2d75) 1;
+  border-radius: 50%; /* fully rounded */
 }
 
 .primary {

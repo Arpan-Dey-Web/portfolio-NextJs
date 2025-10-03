@@ -14,8 +14,8 @@ const Projects = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="my-10 ">
-      <h1 className="text-center text-4xl my-10 primary font-bold">
+    <div className="my-10 mx-auto max-w-7xl w-11/12">
+      <h1 className="text-center my-10 primary font-extrabold merinda-font  text-5xl">
         My Projects
       </h1>
 

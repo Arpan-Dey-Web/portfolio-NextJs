@@ -6,9 +6,9 @@ import OtherSkills from "./OtherSkills";
 
 const Skills = () => {
   return (
-    <div className="mt-10 ">
+    <div className="mt-10 mx-auto max-w-7xl w-11/12">
       <div className="text-center">
-        <h1 className="text-3xl  primary md:text-4xl  font-extrabold  mb-2 my-5">
+        <h1 className="text-3xl  primary md:text-5xl  font-extrabold  mb-2 my-5 merinda-font">
           Stack & Skills{" "}
         </h1>
         <p className="w-11/12 md:w-6/12 mx-auto text">

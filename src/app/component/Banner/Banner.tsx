@@ -1,10 +1,10 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
-import Image from "next/image";
-import bannerImage from "../../../../public/bannerImage.png";
+import ProfileWithTechStack from "../../components/Bannerimage";
 
 const Banner = () => {
   // download resume function
@@ -18,21 +18,22 @@ const Banner = () => {
   };
 
   return (
-    <div className=" flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 md:py-24 max-w-6xl mx-auto">
+    <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto w-11/12">
       {/* Text Content */}
-      <div className="mt-10 md:mt-0 text-center md:text-left">
+      <div className="text-center md:text-left">
         <div className=" md:text-5xl font-bold mb-6">
-          <span className="text-white text-2xl md:text-3xl mb-6 ">
-            Hello, I am{" "}
+          <span className="text-white text-2xl md:text-3xl mb-6 merinda-font ">
+            Welcome To My Portfolio
           </span>{" "}
           <br />
-          <h1 className="primary  text-4xl md:text-5xl lg:text-6xl  mt-6">
-            Arpan Dey
+          <h1 className="primary  text-4xl md:text-5xl lg:text-7xl merinda-font font-bold  mt-6 ">
+            <span className="text-white">Hello, I am</span>{" "}
+            <span className="name-gradient">Arpan</span>
           </h1>
         </div>
 
-        <div className="text-2xl md:text-4xl mb-8 h-14">
-          <span className="primary font-bold">
+        <div className="text-2xl md:text-4xl mb-8 ">
+          <span className="primary font-bold merinda-font name-gradient">
             <Typewriter
               words={[
                 "Frontend Developer",
@@ -41,21 +42,23 @@ const Banner = () => {
               ]}
               loop={false}
               cursor
-              cursorStyle="_"
+              cursorStyle="|"
               cursorColor="#4d79ff"
               typeSpeed={70}
               deleteSpeed={50}
-              delaySpeed={1500}
+              delaySpeed={2000}
             />
           </span>
         </div>
 
-        <div className="text-lg text-opacity-80 mb-10 max-w-xl text ">
-          <p className="mb-3">Build. Break. Learn. Repeat</p>
-          <p className="mb-3 ">
+        <div className="text-lg text-opacity-80 mb-10 max-w-xl   nunito-font">
+          <p className="mb-3  nunito-font">Build. Break. Learn. Repeat</p>
+          <p className="mb-3  nunito-font">
             Think In Logic, Speak In Design, Dream In Code
           </p>
-          <p>A Developer Not By Title, But By Mindset</p>
+          <p className=" nunito-font">
+            A Developer Not By Title, But By Mindset
+          </p>
         </div>
 
         {/* Social Links */}
@@ -87,6 +90,16 @@ const Banner = () => {
           >
             <SiGmail />
           </Link>
+
+          <Link
+            href="https://wa.me/8801821524847"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl text hover:text-cyber-primary transition-colors social-link p-2 rounded-lg"
+            aria-label="Email"
+          >
+            <SiWhatsapp />
+          </Link>
         </div>
 
         <div className="mt-10 flex gap-6 ">
@@ -110,18 +123,23 @@ const Banner = () => {
         </div>
       </div>
 
-      {/* Profile Image */}
       <div className="relative w-fit mx-auto md:mx-0">
-        {/* Image Container */}
-        <div className="rounded-full shadow-[0_0_25px_rgba(77,121,255,0.7),0_0_50px_rgba(255,45,117,0.4)] bg-gradient-to-tr  from-cyber-primary/20  via-transparent  to-cyber-accent/20 backdrop-blur-sm border-2 border-transparent border-opacity-30 hover:border-cyber-accent transition-all duration-300">
-          <Image
-            className=" h-[280px] w-[280px] md:h-[350px] md:w-[350px] lg:h-[400px] lg:w-[400px] rounded-full  object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-500 "
-            height={400}
-            width={400}
-            src={bannerImage}
-            alt="Arpan Dey - MERN Stack Developer"
-          />
-        </div>
+        {/* Gradient Border Container */}
+        <ProfileWithTechStack/>
+        {/* <div
+          className="p-1 rounded-full"
+          style={{ background: "linear-gradient(45deg, #4d79ff, #ff2d75)" }}
+        >
+          <div className="rounded-full overflow-hidden">
+            <Image
+              src={bannerImage}
+              width={400}
+              height={400}
+              alt="Arpan Dey"
+              className="rounded-full"
+            />
+          </div>
+        </div> */}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <div className="background">
+    <div className=" bg-gradient-to-b from-[#0f0a1f] to-[#1a1033]">
       <footer className="max-w-7xl  w-11/12 mx-auto py-8 ">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           {/* Logo & Copyright */}

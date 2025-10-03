@@ -40,8 +40,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-90">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 z-50 shadow-lg backdrop-blur-sm  bg-gradient-to-b from-[#0f0a1f] to-[#1a1033]">
+      <div className="max-w-7xl mx-auto w-11/12">
         <div className="flex items-center justify-between h-16">
           {/* Logo & Mobile Toggle */}
           <div className="flex items-center">
@@ -80,8 +80,8 @@ const Navbar = () => {
                 <ScrollLink
                   key={item.name}
                   to={item.name}
-                  {...scrollProps} 
-                  className="text capitalize  font-medium px-3 py-2 relative group cursor-pointer transition-all duration-300 flex items-center"
+                  {...scrollProps}
+                  className="text capitalize  font-medium px-3 py-2 relative group cursor-pointer transition-all duration-300 flex items-center hover:border-b-2 border-pink-600 merinda-font"
                 >
                   {/* Icon and text container */}
                   <span className="flex items-center">
