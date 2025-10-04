@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Banner from "./component/Banner/Banner";
 import AboutMe from "./component/AboutMe/AboutMe";
@@ -9,12 +8,11 @@ import Certificate from "./component/Certification/Certificate";
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-gray-100">
       <section
         id="home"
-        className="relative min-h-screen w-full  overflow-hidden"
+        className="relative min-h-screen w-full overflow-hidden"
       >
-        {/* Background Gradient */}
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -26,28 +24,31 @@ export default function Home() {
           <Banner />
         </div>
       </section>
-      {/*  */}
-      <section className="bg-gradient-to-b from-[#0f0a1f] to-[#1a1033]">
-        <section id="about">
-          <AboutMe />
-        </section>
 
-        <section id="skills">
-          <Skills />
-        </section>
+      <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#030108] via-[#0f0533] to-[#160e30]">
+        <div className="absolute inset-0 z-0 pointer-events-none" />
+        <section className="relative z-10">
+          <section id="about" className="pt-40 pb-20">
+            <AboutMe />
+          </section>
 
-        <section id="projects">
-          <Projects />
-        </section>
+          <section id="skills" className="py-20">
+            <Skills />
+          </section>
 
-        <section id="certificate">
-          <Certificate />
-        </section>
+          <section id="projects" className="py-20">
+            <Projects />
+          </section>
 
-        <section id="contact">
-          <ContactPage />
+          <section id="certificate" className="py-20">
+            <Certificate />
+          </section>
+
+          <section id="contact" className="py-20">
+            <ContactPage />
+          </section>
         </section>
-      </section>
+      </div>
     </div>
   );
 }

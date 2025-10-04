@@ -12,7 +12,7 @@ const Mylogo = () => {
       </div>
       <div className="">
         <h1
-          className="text-xl font-mono font-bold"
+          className="text-2xl font-bold "
           style={{
             background: "linear-gradient(to right, #4d79ff, #ff2d75)",
             WebkitBackgroundClip: "text",

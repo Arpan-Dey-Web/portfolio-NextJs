@@ -30,20 +30,23 @@ const ContactPage: React.FC = () => {
 // mx-auto max-w-7xl w-11/12
   return (
     <div className="mx-auto max-w-7xl w-11/12">
-      <div className="max-w-4xl mx-auto px-4 py-16 ">
+      <div className="max-w-4xl mx-auto px-4  ">
         <div className="text-center mb-12">
-          <h1 className="font-extrabold merinda-font  text-5xl primary mb-4">
-            Get in Touch
+          <h1 className="font-extrabold merinda-font  text-5xl primary mb-5">
+            {`Let's`} Connect
           </h1>
-          <p className="text-lg text">
-            I am open to collaborations, opportunities, or just a friendly chat.
+          <p className="text-2xl text merinda-font ">
+            Ready to bring your ideas to life? Let discuss your next project and
+            create something amazing together.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 merinda-font">
           {/* Contact Information */}
           <div className="card p-8 flex flex-col justify-center">
-            <h2 className="text-2xl font-semibold primary mb-4">Arpan Dey</h2>
+            <h2 className="text-2xl font-extrabold primary mb-4 name-gradient">
+              Arpan Dey
+            </h2>
             <p className="text mb-6">
               MERN stack developer
               <br />

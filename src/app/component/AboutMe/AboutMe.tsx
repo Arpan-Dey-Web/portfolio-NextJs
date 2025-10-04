@@ -4,13 +4,15 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className=" px-6 py-16  rounded-lg shadow-lg primary  mx-auto max-w-7xl w-11/12"
+      className=" px-6 rounded-lg shadow-lg primary  mx-auto max-w-7xl w-11/12"
       aria-label="About Me Section"
     >
       <header className="text-center mb-10">
-        <h2 className="text-5xl font-extrabold  mb-2 merinda-font">About Me</h2>
-        <p className="text-lg  italic accent">
-          Code as art, purpose as direction.
+        <h2 className="text-5xl font-extrabold  mb-2 merinda-font ">
+          My Journey
+        </h2>
+        <p className="text-2xl  text-white merinda-font  mt-5">
+          From curious tinkerer to crafting digital stories with code.
         </p>
       </header>
 

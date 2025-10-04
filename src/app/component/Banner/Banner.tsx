@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiWhatsapp } from "react-icons/si";
+import { FaLightbulb } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
 import { SiGmail } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
@@ -101,31 +104,40 @@ const Banner = () => {
             <SiWhatsapp />
           </Link>
         </div>
-
-        <div className="mt-10 flex gap-6 ">
-          {/* contact */}
+        {/* button start */}
+        <div className="mt-10 flex gap-6 flex-wrap">
           <button
-            className="btn rounded-full text-white px-8 py-2 bg-[#DE2A8A] glow glow-hover"
+            className="group relative rounded-full text-white px-14 py-4 bg-[#DE2A8A] text-xl font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(222,42,138,0.5)]"
             onClick={() => {
-              document.getElementById("contact")?.scrollIntoView({
+              document.getElementById("skills")?.scrollIntoView({
                 behavior: "smooth",
               });
             }}
           >
-            Contact Now
+            <span className="relative z-10 flex items-center gap-2">
+              <FaLightbulb className="w-5 h-5" />
+              Technical Skills
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#DE2A8A] via-[#FF3D9A] to-[#DE2A8A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
+
           <button
             onClick={handleDownload}
-            className="btn rounded-full  text-white bg-gray-600 glow glow-hover   px-8 py-2"
+            className="group relative rounded-full text-[#DE2A8A] px-14 py-4 text-xl font-medium border-2 border-[#DE2A8A] bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(222,42,138,0.3)]"
           >
-            Download CV
+            <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+              <HiDownload className="w-5 h-5" />
+              Download CV
+            </span>
+            <div className="absolute inset-0 bg-[#DE2A8A] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
           </button>
         </div>
+        {/* button end */}
       </div>
 
       <div className="relative w-fit mx-auto md:mx-0">
         {/* Gradient Border Container */}
-        <ProfileWithTechStack/>
+        <ProfileWithTechStack />
         {/* <div
           className="p-1 rounded-full"
           style={{ background: "linear-gradient(45deg, #4d79ff, #ff2d75)" }}

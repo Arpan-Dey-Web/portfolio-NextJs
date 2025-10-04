@@ -8,11 +8,12 @@ export default function Certificate() {
   return (
     <section
       id="certificate"
-      className=" px-4 py-16  mx-auto max-w-7xl w-11/12"
+      className=" px-4  mx-auto max-w-7xl w-11/12 merinda-font"
     >
       <div>
-        <h1 className="text-center my-10 primary font-extrabold merinda-font  text-5xl">
-          Certificate & Recognition
+        <h1 className="text-center my-10 primary font-extrabold   text-5xl">
+          <span className="name-gradient"> Certificate</span> &
+          <span className="name-gradient"> Recognition</span>
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

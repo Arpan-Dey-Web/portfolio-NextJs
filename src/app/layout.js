@@ -18,11 +18,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={nunito.className}>
       <body className={` antialiased  `}>
         <Navbar />
-        <LenisProvider>
-          {children}
-          <ScrollToTopButton />
-        </LenisProvider>
+        <LenisProvider>{children}</LenisProvider>
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
