@@ -13,7 +13,7 @@ const OtherSkills = () => {
   }, []);
   return (
     <div className="text-center">
-      <div className="grid grid-cols-3 gap-4 p-4 ">
+      <div className="grid grid-cols-3 gap-4  ">
         {otherTools.map((tool) => (
           <Tool key={tool.id} tool={tool} />
         ))}

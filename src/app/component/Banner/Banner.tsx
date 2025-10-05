@@ -64,44 +64,48 @@ const Banner = () => {
           </p>
         </div>
 
+
         {/* Social Links */}
-        <div className="flex justify-center md:justify-start gap-6">
+        <div className="flex gap-3 ">
           <Link
+            href="https://www.linkedin.com/in/arpan-dey-web?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
-            href={
-              "https://www.linkedin.com/in/arpan-dey-web?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            }
-            className="text-3xl text hover:text-cyber-primary transition-colors social-link p-2 rounded-lg"
+            rel="noopener noreferrer"
+            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            title="LinkedIn"
             aria-label="LinkedIn"
           >
-            <FaLinkedinIn />
+            <FaLinkedinIn className="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
           </Link>
           <Link
+            href="https://github.com/Arpan-Dey-Web"
             target="_blank"
-            href={"https://github.com/Arpan-Dey-Web"}
-            className="text-3xl text hover:text-cyber-primary transition-colors social-link p-2 rounded-lg"
+            rel="noopener noreferrer"
+            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            title="GitHub"
             aria-label="GitHub"
           >
-            <FaGithub />
+            <FaGithub className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
           </Link>
           <Link
             href="mailto:arpandey.web@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl text hover:text-cyber-primary transition-colors social-link p-2 rounded-lg"
+            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            title="Gmail"
             aria-label="Email"
           >
-            <SiGmail />
+            <SiGmail className="w-5 h-5 text-gray-400 group-hover:text-red-400 transition-colors" />
           </Link>
-
           <Link
             href="https://wa.me/8801821524847"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl text hover:text-cyber-primary transition-colors social-link p-2 rounded-lg"
-            aria-label="Email"
+            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            title="WhatsApp"
+            aria-label="WhatsApp"
           >
-            <SiWhatsapp />
+            <SiWhatsapp className="w-5 h-5 text-gray-400 group-hover:text-green-400 transition-colors" />
           </Link>
         </div>
         {/* button start */}

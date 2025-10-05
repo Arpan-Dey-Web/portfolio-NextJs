@@ -12,8 +12,8 @@ const Frontend = () => {
   }, []);
 
   return (
-    <div className="text-cente ">
-      <div className="grid grid-cols-3 gap-4 p-4 ">
+    <div className=" ">
+      <div className="grid grid-cols-3 gap-4 ">
         {frontendSkills.map((frontendSkill) => (
           <SingleSkill key={frontendSkill.id} frontendSkill={frontendSkill} />
         ))}

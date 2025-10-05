@@ -8,7 +8,7 @@ export default function Project() {
   const { projectsid } = params;
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto w-11/12">
+    <div >
       <SingleProject projectsid={projectsid}></SingleProject>
     </div>
   );
