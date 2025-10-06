@@ -66,8 +66,6 @@ export default function Certificate() {
       id="certificate"
       className="mx-auto max-w-7xl w-11/12 merinda-font relative overflow-hidden"
     >
-     
-
       <div className="relative z-10">
         {/* Enhanced Header Section */}
         <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
@@ -80,19 +78,16 @@ export default function Certificate() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 animate-slide-up">
-            <span className="name-gradient inline-block hover:scale-110 transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block transition-transform duration-300 cursor-default">
               Certificate
             </span>{" "}
             <span className="text-white">&</span>{" "}
-            <span className="name-gradient inline-block hover:scale-110 transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block  transition-transform duration-300 cursor-default">
               Recognition
             </span>
           </h1>
 
-          <div className="relative w-32 sm:w-40 h-1.5 mx-auto mb-8 sm:mb-10">
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-green-500 rounded-full animate-gradient"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-green-500 rounded-full blur-sm opacity-50"></div>
-          </div>
+       
 
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-300 mt-4 sm:mt-6 max-w-3xl mx-auto px-4 animate-slide-up">
             Milestones in my learning journey and professional achievements

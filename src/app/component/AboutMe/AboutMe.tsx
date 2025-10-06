@@ -80,17 +80,14 @@ const AboutMe = () => {
             <IoSparkles className="w-6 h-6 text-purple-400 animate-pulse" />
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-4 sm:mb-6 merinda-font">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold my-4 sm:mb-6 merinda-font">
             My{" "}
-            <span className="name-gradient inline-block hover:scale-110 transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block  transition-transform duration-300 cursor-default">
               Journey
             </span>
           </h2>
 
-          <div className="relative w-24 sm:w-32 h-1.5 mx-auto mb-6 sm:mb-8">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full animate-gradient"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full blur-sm opacity-50"></div>
-          </div>
+          
 
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 merinda-font mt-4 sm:mt-6 max-w-3xl mx-auto px-4 animate-slide-up">
             From curious tinkerer to crafting digital stories with code.
@@ -115,7 +112,7 @@ const AboutMe = () => {
             {/* Main Content */}
             <div className="space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl text-gray-300 merinda-font leading-relaxed">
               <p className="text-justify sm:text-left">
-                I'm{" "}
+                {`I'm`} {" "}
                 <span className="font-bold name-gradient text-xl sm:text-2xl">
                   Arpan Dey
                 </span>

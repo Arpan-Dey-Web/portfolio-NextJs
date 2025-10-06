@@ -48,8 +48,6 @@ const Skills = () => {
 
   return (
     <section className="mx-auto max-w-7xl w-11/12 relative overflow-hidden">
-
-
       <div className="relative z-10">
         {/* Enhanced Header Section */}
         <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
@@ -61,17 +59,14 @@ const Skills = () => {
             <IoSparkles className="w-6 h-6 text-blue-400 animate-pulse" />
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 merinda-font animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold my-6 merinda-font animate-slide-up">
             Tech{" "}
-            <span className="name-gradient inline-block hover:scale-110 transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block transition-transform duration-300 cursor-default">
               Stacks
             </span>
           </h1>
 
-          <div className="relative w-32 sm:w-40 h-1.5 mx-auto mb-8 sm:mb-10">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full animate-gradient"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-sm opacity-50"></div>
-          </div>
+         
 
           <p className="w-11/12 md:w-9/12 lg:w-8/12 mx-auto text-center text-base sm:text-lg md:text-xl lg:text-2xl merinda-font text-gray-300 leading-relaxed px-4 animate-slide-up">
             I work with a modern tech stack to build efficient, user-friendly

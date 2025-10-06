@@ -41,18 +41,14 @@ const Projects = () => {
             <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold merinda-font mb-6 animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold merinda-font my-6 animate-slide-up">
             Featured{" "}
-            <span className="name-gradient inline-block hover:scale-110 transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block  transition-transform duration-300 cursor-default">
               Projects
             </span>
           </h1>
 
-          {/* Enhanced Divider */}
-          <div className="relative w-32 sm:w-40 h-1.5 mx-auto mb-8 sm:mb-10">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full animate-gradient"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-sm opacity-50"></div>
-          </div>
+     
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto merinda-font text-gray-300 leading-relaxed px-4 animate-slide-up">
             Discover my latest work showcasing innovative solutions, modern

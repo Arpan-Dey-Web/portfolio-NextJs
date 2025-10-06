@@ -7,7 +7,7 @@
     {
         "id": 2,
         "skillName": "GitHub",
-        "skillImage": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+        "skillImage": "https://i.ibb.co.com/DDZHrSNn/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f706e672f.png"
     },
     {
         "id": 3,
@@ -16,13 +16,13 @@
     },
     {
         "id": 4,
-        "skillName": "Netlify",
-        "skillImage": "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"
+        "skillName": "Trae",
+        "skillImage": "https://i.ibb.co.com/4gDRgx1S/download-1.jpg"
     },
     {
         "id": 5,
-        "skillName": "Firebase Hosting",
-        "skillImage": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+        "skillName": "VS Code",
+        "skillImage": "https://i.ibb.co.com/NgBVzcN2/icons8-visual-studio-code-48.png"
     },
     {
         "id": 6,

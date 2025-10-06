@@ -14,7 +14,8 @@ import {
 import { FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoSparkles, IoChatbubbleEllipses } from "react-icons/io5";
-
+import Image from "next/image";
+import bannerImage from "../../../../public/bannerImage.png"
 const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
 const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
@@ -122,17 +123,14 @@ const ContactPage: React.FC = () => {
             <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold merinda-font mb-6 animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold merinda-font my-6 animate-slide-up">
             {` Let's`}{" "}
             <span className="name-gradient inline-block hover:scale-110 transition-transform duration-300 cursor-default">
               Connect
             </span>
           </h1>
 
-          <div className="relative w-32 sm:w-40 h-1.5 mx-auto mb-8 sm:mb-10">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 rounded-full animate-gradient"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 rounded-full blur-sm opacity-50"></div>
-          </div>
+          
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 merinda-font max-w-3xl mx-auto leading-relaxed px-4 animate-slide-up">
             Ready to bring your ideas to life? {` Let's`} discuss your next
@@ -151,7 +149,8 @@ const ContactPage: React.FC = () => {
             <div>
               <div className="flex items-center gap-4 mb-8">
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 border-2 border-blue-500/40 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <FiUser className="w-8 h-8 sm:w-10 sm:h-10 text-blue-400" />
+                
+                  <Image src={bannerImage} alt="logo image"/>
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
                 </div>
                 <div>
