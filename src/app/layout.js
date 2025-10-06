@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <LenisProvider>{children}</LenisProvider>
         <Footer />
-        <ScrollToTopButton />
+        {/* <ScrollToTopButton /> */}
       </body>
     </html>
   );

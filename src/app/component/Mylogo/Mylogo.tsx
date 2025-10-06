@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAtlassian } from "react-icons/fa";
 
-const Mylogo = () => {
+export default function Mylogo () {
   return (
     <div className="flex items-center group gap-1">
       <div
@@ -28,4 +28,4 @@ const Mylogo = () => {
   );
 };
 
-export default Mylogo;
+

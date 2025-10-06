@@ -1,16 +1,13 @@
 "use client";
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SiWhatsapp } from "react-icons/si";
-import { FaLightbulb } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaLightbulb } from "react-icons/fa";
+import { SiWhatsapp, SiGmail } from "react-icons/si";
 import { HiDownload } from "react-icons/hi";
-import { SiGmail } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
 import ProfileWithTechStack from "../../components/Bannerimage";
 
 const Banner = () => {
-  // download resume function
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
@@ -21,22 +18,26 @@ const Banner = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto w-11/12">
+    <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto w-11/12 gap-8 lg:gap-16">
       {/* Text Content */}
-      <div className="text-center md:text-left">
-        <div className=" md:text-5xl font-bold mb-6">
-          <span className="text-white text-2xl md:text-3xl mb-6 merinda-font ">
+      <div className="text-center md:text-left space-y-8 animate-fade-in">
+        {/* Welcome Text */}
+        <div className="space-y-4">
+          <span className="text-white/90 text-2xl md:text-3xl merinda-font block animate-slide-down">
             Welcome To My Portfolio
-          </span>{" "}
-          <br />
-          <h1 className="primary  text-4xl md:text-5xl lg:text-7xl merinda-font font-bold  mt-6 ">
-            <span className="text-white">Hello, I am</span>{" "}
-            <span className="name-gradient">Arpan</span>
+          </span>
+
+          <h1 className="text-4xl md:text-5xl lg:text-7xl merinda-font font-bold animate-slide-up">
+            <span className="text-white">Hello, I am </span>
+            <span className="name-gradient inline-block hover:scale-105 transition-transform duration-300">
+              Arpan
+            </span>
           </h1>
         </div>
 
-        <div className="text-2xl md:text-4xl mb-8 ">
-          <span className="primary font-bold merinda-font name-gradient">
+        {/* Typewriter Effect */}
+        <div className="text-2xl md:text-4xl min-h-[3rem] md:min-h-[4rem]">
+          <span className="font-bold merinda-font name-gradient">
             <Typewriter
               words={[
                 "Frontend Developer",
@@ -54,64 +55,74 @@ const Banner = () => {
           </span>
         </div>
 
-        <div className="text-lg text-opacity-80 mb-10 max-w-xl   nunito-font">
-          <p className="mb-3  nunito-font">Build. Break. Learn. Repeat</p>
-          <p className="mb-3  nunito-font">
-            Think In Logic, Speak In Design, Dream In Code
+        {/* Taglines with Animation */}
+        <div className="text-base md:text-lg text-gray-300/90 max-w-xl nunito-font space-y-3">
+          <p className="hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default">
+            ⚡ Build. Break. Learn. Repeat
           </p>
-          <p className=" nunito-font">
-            A Developer Not By Title, But By Mindset
+          <p className="hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default delay-100">
+            💭 Think In Logic, Speak In Design, Dream In Code
+          </p>
+          <p className="hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default delay-200">
+            🚀 A Developer Not By Title, But By Mindset
           </p>
         </div>
 
-
-        {/* Social Links */}
-        <div className="flex gap-3 ">
+        {/* Social Links with Enhanced Styling */}
+        <div className="flex gap-4 justify-center md:justify-start">
           <Link
-            href="https://www.linkedin.com/in/arpan-dey-web?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/arpan-dey-web"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            className="group relative w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 flex items-center justify-center transition-all duration-300 hover:scale-110 overflow-hidden"
             title="LinkedIn"
             aria-label="LinkedIn"
           >
-            <FaLinkedinIn className="w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <FaLinkedinIn className="relative z-10 w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
           </Link>
+
           <Link
             href="https://github.com/Arpan-Dey-Web"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            className="group relative w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/70 flex items-center justify-center transition-all duration-300 hover:scale-110 overflow-hidden"
             title="GitHub"
             aria-label="GitHub"
           >
-            <FaGithub className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <FaGithub className="relative z-10 w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
           </Link>
+
           <Link
             href="mailto:arpandey.web@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            className="group relative w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-red-500/70 flex items-center justify-center transition-all duration-300 hover:scale-110 overflow-hidden"
             title="Gmail"
             aria-label="Email"
           >
-            <SiGmail className="w-5 h-5 text-gray-400 group-hover:text-red-400 transition-colors" />
+            <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <SiGmail className="relative z-10 w-5 h-5 text-gray-400 group-hover:text-red-400 transition-colors" />
           </Link>
+
           <Link
             href="https://wa.me/8801821524847"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+            className="group relative w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-green-500/70 flex items-center justify-center transition-all duration-300 hover:scale-110 overflow-hidden"
             title="WhatsApp"
             aria-label="WhatsApp"
           >
-            <SiWhatsapp className="w-5 h-5 text-gray-400 group-hover:text-green-400 transition-colors" />
+            <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <SiWhatsapp className="relative z-10 w-5 h-5 text-gray-400 group-hover:text-green-400 transition-colors" />
           </Link>
         </div>
-        {/* button start */}
-        <div className="mt-10 flex gap-6 flex-wrap">
+
+        {/* Enhanced CTA Buttons */}
+        <div className="flex gap-4 md:gap-6 flex-wrap justify-center md:justify-start pt-2">
           <button
-            className="group relative rounded-full text-white px-14 py-4 bg-[#DE2A8A] text-xl font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(222,42,138,0.5)]"
+            className="group relative rounded-full text-white px-8 md:px-14 py-3 md:py-4 bg-[#DE2A8A] text-lg md:text-xl font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(222,42,138,0.5)] active:scale-95"
             onClick={() => {
               document.getElementById("skills")?.scrollIntoView({
                 behavior: "smooth",
@@ -119,43 +130,33 @@ const Banner = () => {
             }}
           >
             <span className="relative z-10 flex items-center gap-2">
-              <FaLightbulb className="w-5 h-5" />
+              <FaLightbulb className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               Technical Skills
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#DE2A8A] via-[#FF3D9A] to-[#DE2A8A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#DE2A8A] via-[#FF3D9A] to-[#DE2A8A] opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-gradient" />
+            <div className="absolute inset-0 bg-[#FF3D9A]/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
 
-          <button
-            onClick={handleDownload}
-            className="group relative rounded-full text-[#DE2A8A] px-14 py-4 text-xl font-medium border-2 border-[#DE2A8A] bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(222,42,138,0.3)]"
+          <Link
+            href="https://drive.google.com/file/d/1Md274D0IlTFRjrtSsAO7fOHxDPZdTBZn/view?usp=sharing"
+            target="_blank"
+            className="group relative rounded-full text-[#DE2A8A] px-8 md:px-14 py-3 md:py-4 text-lg md:text-xl font-medium border-2 border-[#DE2A8A] bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(222,42,138,0.3)] active:scale-95"
           >
             <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
-              <HiDownload className="w-5 h-5" />
-              Download CV
+              <HiDownload className="w-5 h-5 group-hover:animate-bounce" />
+              Resume
             </span>
             <div className="absolute inset-0 bg-[#DE2A8A] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out" />
-          </button>
+          </Link>
         </div>
-        {/* button end */}
       </div>
 
-      <div className="relative w-fit mx-auto md:mx-0">
-        {/* Gradient Border Container */}
-        <ProfileWithTechStack />
-        {/* <div
-          className="p-1 rounded-full"
-          style={{ background: "linear-gradient(45deg, #4d79ff, #ff2d75)" }}
-        >
-          <div className="rounded-full overflow-hidden">
-            <Image
-              src={bannerImage}
-              width={400}
-              height={400}
-              alt="Arpan Dey"
-              className="rounded-full"
-            />
-          </div>
-        </div> */}
+      {/* Profile Image with Enhanced Effects */}
+      <div className="relative w-fit mx-auto md:mx-0 animate-float">
+        <div className="absolute -inset-4 bg-gradient-to-r from-[#4d79ff] via-[#ff2d75] to-[#4d79ff] rounded-full opacity-30 blur-2xl animate-pulse-slow" />
+        <div className="relative">
+          <ProfileWithTechStack />
+        </div>
       </div>
     </div>
   );

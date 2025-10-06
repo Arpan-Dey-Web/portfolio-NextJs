@@ -27,7 +27,7 @@ export default function Home() {
       <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-b from-[#030108] via-[#0f0533] to-[#160e30]">
         <div className="absolute inset-0 z-0 pointer-events-none" />
         <section className="relative z-10">
-          <section id="about" className="pt-40 pb-20">
+          <section id="about" className="py-20">
             <AboutMe />
           </section>
 
