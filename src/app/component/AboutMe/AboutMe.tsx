@@ -20,8 +20,8 @@ const AboutMe = () => {
       color: "from-purple-500/20 to-pink-500/20 border-purple-500/40",
     },
     {
-      name: "Photography",
-      icon: "📸",
+      name: "Full Stack",
+      icon: "🌐",
       color: "from-orange-500/20 to-red-500/20 border-orange-500/40",
     },
     {

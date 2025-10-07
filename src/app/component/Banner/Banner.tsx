@@ -27,9 +27,9 @@ const Banner = () => {
             Welcome To My Portfolio
           </span>
 
-          <h1 className="text-4xl md:text-5xl lg:text-7xl merinda-font font-bold animate-slide-up">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl merinda-font font-bold animate-slide-up ">
             <span className="text-white">Hello, I am </span>
-            <span className="name-gradient inline-block hover:scale-105 transition-transform duration-300">
+            <span className="name-gradient inline-block  transition-transform duration-300 py-4">
               Arpan
             </span>
           </h1>
