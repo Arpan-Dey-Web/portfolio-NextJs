@@ -7,7 +7,7 @@ import Certificate from "./component/Certification/Certificate";
 
 export default function Home() {
   return (
-    <div className="text-gray-100">
+    <div  className="text-gray-100">
       <section
         id="home"
         className="relative min-h-screen w-full overflow-hidden"

@@ -28,17 +28,22 @@ const Projects = () => {
 
   return (
     <section className="mx-auto max-w-7xl w-11/12 relative overflow-hidden">
-  
       <div className="relative z-10">
         {/* Enhanced Header Section */}
         <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
           {/* Enhanced Badge */}
-          <div className="inline-flex items-center gap-2 mb-6 px-6 sm:px-8 py-2.5 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full border border-blue-500/40 hover:border-blue-400/60 transition-all duration-300 group cursor-default">
-            <IoRocketSharp className="w-4 h-4 text-blue-400 group-hover:rotate-45 transition-transform duration-500" />
-            <p className="text-xs sm:text-sm font-bold text-blue-300 tracking-widest">
-              PORTFOLIO SHOWCASE
-            </p>
-            <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+          <div className="relative inline-flex items-center gap-2 mb-6 border-2 border-blue-500/50 rounded-full py-2.5 px-8 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-blue-900/20 backdrop-blur-sm shadow-lg shadow-blue-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105 group cursor-default">
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-blue-500/10 animate-pulse"></div>
+
+            {/* Content */}
+            <div className="relative flex items-center gap-2">
+              <IoRocketSharp className="w-4 h-4 text-blue-400 group-hover:rotate-45 transition-transform duration-500" />
+              <span className="text-xs sm:text-sm uppercase tracking-widest bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-bold">
+                Portfolio Showcase
+              </span>
+              <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse shadow-lg shadow-purple-400/50"></div>
+            </div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold merinda-font my-6 animate-slide-up">
@@ -47,8 +52,6 @@ const Projects = () => {
               Projects
             </span>
           </h1>
-
-     
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl w-11/12 sm:w-10/12 md:w-9/12 lg:w-8/12 mx-auto merinda-font text-gray-300 leading-relaxed px-4 animate-slide-up">
             Discover my latest work showcasing innovative solutions, modern

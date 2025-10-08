@@ -115,12 +115,18 @@ const ContactPage: React.FC = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Enhanced Header Section */}
         <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 mb-6 px-6 sm:px-8 py-2.5 bg-gradient-to-r from-blue-500/20 to-green-500/20 rounded-full border border-blue-500/40 hover:border-blue-400/60 transition-all duration-300 group cursor-default">
-            <IoChatbubbleEllipses className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" />
-            <p className="text-xs sm:text-sm font-bold text-blue-300 tracking-widest">
-              GET IN TOUCH
-            </p>
-            <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+          <div className="relative inline-flex items-center gap-2 mb-6 border-2 border-blue-500/50 rounded-full py-2.5 px-8 bg-gradient-to-r from-blue-900/20 via-cyan-900/20 to-green-900/20 backdrop-blur-sm shadow-lg shadow-blue-500/20 hover:shadow-green-500/40 transition-all duration-300 hover:scale-105 group cursor-default">
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-green-500/10 animate-pulse"></div>
+
+            {/* Content */}
+            <div className="relative flex items-center gap-2">
+              <IoChatbubbleEllipses className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-xs sm:text-sm uppercase tracking-widest bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 bg-clip-text text-transparent font-bold">
+                Get in Touch
+              </span>
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-lg shadow-green-400/50"></div>
+            </div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold merinda-font my-6 animate-slide-up">
@@ -129,8 +135,6 @@ const ContactPage: React.FC = () => {
               Connect
             </span>
           </h1>
-
-          
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 merinda-font max-w-3xl mx-auto leading-relaxed px-4 animate-slide-up">
             Ready to bring your ideas to life? {` Let's`} discuss your next
@@ -149,8 +153,7 @@ const ContactPage: React.FC = () => {
             <div>
               <div className="flex items-center gap-4 mb-8">
                 <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 border-2 border-blue-500/40 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                
-                  <Image src={bannerImage} alt="logo image"/>
+                  <Image src={bannerImage} alt="logo image" />
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500"></div>
                 </div>
                 <div>

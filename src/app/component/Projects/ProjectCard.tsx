@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FiAward } from "react-icons/fi";
+import { IoSparkles } from "react-icons/io5";
 
 const ProjectCard = ({ project }) => {
   const {
@@ -10,15 +12,32 @@ const ProjectCard = ({ project }) => {
     liveLink,
     githubClient,
     githubServer,
-    features,
+   featured,
     license,
     images,
     ProjectLogo,
     ProjectBannerImages,
   } = project;
+  // Helper function to get technology array
+  const getTechnologyArray = () => {
+    if (Array.isArray(technology)) {
+      return technology.slice(0, 6); // Show max 6 tags
+    }
+    // If technology is an object, flatten and get first 6
+    const allTechs = Object.values(technology).flat().filter(Boolean);
+    return allTechs.slice(0, 6);
+  };
 
+  const techArray = getTechnologyArray();
   return (
     <article className="group rounded-2xl max-w-md mx-auto shadow-2xl bg-gradient-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-sm border border-blue-500/30 hover:border-blue-400/60 transition-all duration-500 hover:shadow-blue-500/20 hover:-translate-y-2 overflow-hidden">
+      {/* Featured Badge */}
+      {featured && (
+        <div className="absolute top-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 backdrop-blur-md rounded-full border border-yellow-500/40">
+          <FiAward className="w-3.5 h-3.5 text-yellow-400" />
+          <span className="text-yellow-300 text-xs font-bold">FEATURED</span>
+        </div>
+      )}
       {/* Banner Image */}
       <div className="relative mb-2 overflow-hidden">
         <div className="relative h-48 sm:h-52 w-full">
@@ -91,14 +110,14 @@ const ProjectCard = ({ project }) => {
               Tech Stack
             </p>
             <span className="text-xs text-gray-500">
-              {technology.length} techs
+              {techArray.length}+ techs
             </span>
           </div>
 
           <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent mb-3"></div>
 
           <div className="flex flex-wrap gap-2 ">
-            {technology.map((tech, index)  => (
+            {techArray.map((tech, index) => (
               <span
                 key={index}
                 className="text-white text-xs font-medium px-3 py-1.5 rounded-full bg-gray-800/60 border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/60 transition-all duration-300 cursor-pointer"
@@ -111,9 +130,10 @@ const ProjectCard = ({ project }) => {
 
         {/* Action Buttons */}
         <div className="flex gap-3">
-          <Link href={`component/Projects/${id}`} className="flex-1">
-            <button className="group/btn relative w-full px-4 py-2.5 sm:py-3 rounded-full text-white text-sm sm:text-base font-semibold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 transition-all duration-300 overflow-hidden shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50">
+          <Link href={`/component/Projects/${id}`} className="flex-1">
+            <button className="group/btn relative w-full px-4 py-3 rounded-full text-white text-sm sm:text-base font-bold bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition-all duration-300 overflow-hidden shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105">
               <span className="relative z-10 flex items-center justify-center gap-2">
+                <IoSparkles className="w-4 h-4" />
                 View Details
                 <svg
                   className="w-4 h-4 transition-transform group-hover/btn:translate-x-1"
@@ -130,7 +150,7 @@ const ProjectCard = ({ project }) => {
                 </svg>
               </span>
               {/* Animated background */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-500 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
             </button>
           </Link>
 
@@ -186,3 +206,8 @@ const ProjectCard = ({ project }) => {
 };
 
 export default ProjectCard;
+
+
+
+
+

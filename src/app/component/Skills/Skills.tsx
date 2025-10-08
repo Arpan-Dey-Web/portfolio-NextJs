@@ -51,12 +51,18 @@ const Skills = () => {
       <div className="relative z-10">
         {/* Enhanced Header Section */}
         <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <IoSparkles className="w-6 h-6 text-blue-400 animate-pulse" />
-            <span className="text-sm sm:text-base uppercase tracking-widest text-blue-400 font-semibold">
-              My Arsenal
-            </span>
-            <IoSparkles className="w-6 h-6 text-blue-400 animate-pulse" />
+          <div className="relative inline-flex items-center gap-2 mb-4 border-2 border-blue-500/50 rounded-full py-2 px-6 bg-blue-900/20 backdrop-blur-sm shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300 hover:scale-105">
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/10 via-cyan-500/10 to-blue-500/10 animate-pulse"></div>
+
+            {/* Content */}
+            <div className="relative flex items-center gap-2">
+              <IoSparkles className="w-5 h-5 text-blue-400 animate-pulse" />
+              <span className="text-sm sm:text-base uppercase tracking-widest bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent font-bold">
+                My Arsenal
+              </span>
+              <IoSparkles className="w-5 h-5 text-blue-400 animate-pulse" />
+            </div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold my-6 merinda-font animate-slide-up">
@@ -65,8 +71,6 @@ const Skills = () => {
               Stacks
             </span>
           </h1>
-
-         
 
           <p className="w-11/12 md:w-9/12 lg:w-8/12 mx-auto text-center text-base sm:text-lg md:text-xl lg:text-2xl merinda-font text-gray-300 leading-relaxed px-4 animate-slide-up">
             I work with a modern tech stack to build efficient, user-friendly

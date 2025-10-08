@@ -72,22 +72,26 @@ const AboutMe = () => {
       <div className="relative z-10">
         {/* Header Section */}
         <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <IoSparkles className="w-6 h-6 text-purple-400 animate-pulse" />
-            <span className="text-sm sm:text-base uppercase tracking-widest text-purple-400 font-semibold">
-              Get to know me
-            </span>
-            <IoSparkles className="w-6 h-6 text-purple-400 animate-pulse" />
+          <div className="relative inline-flex items-center gap-2 mb-4 border-2 border-purple-500/50 rounded-full py-2 px-6 bg-purple-900/20 backdrop-blur-sm shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-purple-500/10 animate-pulse"></div>
+
+            {/* Content */}
+            <div className="relative flex items-center gap-2">
+              <IoSparkles className="w-5 h-5 text-purple-400 animate-pulse" />
+              <span className="text-sm sm:text-base uppercase tracking-widest bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                Get to know me
+              </span>
+              <IoSparkles className="w-5 h-5 text-purple-400 animate-pulse" />
+            </div>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold my-4 sm:mb-6 merinda-font">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold  mb-8  sm:mb-6 merinda-font ">
             My{" "}
             <span className="name-gradient inline-block  transition-transform duration-300 cursor-default">
               Journey
             </span>
           </h2>
-
-          
 
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 merinda-font mt-4 sm:mt-6 max-w-3xl mx-auto px-4 animate-slide-up">
             From curious tinkerer to crafting digital stories with code.
@@ -112,7 +116,7 @@ const AboutMe = () => {
             {/* Main Content */}
             <div className="space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl text-gray-300 merinda-font leading-relaxed">
               <p className="text-justify sm:text-left">
-                {`I'm`} {" "}
+                {`I'm`}{" "}
                 <span className="font-bold name-gradient text-xl sm:text-2xl">
                   Arpan Dey
                 </span>
@@ -135,9 +139,9 @@ const AboutMe = () => {
               <p className="text-justify sm:text-left">
                 I enjoy turning complex ideas into intuitive, high-performance
                 interfaces that blend functionality with visual elegance.
-                Whether {` it's`} integrating REST APIs, optimizing
-                performance, or refining UI interactions, I focus on writing
-                maintainable code that delivers value to both users and teams.
+                Whether {` it's`} integrating REST APIs, optimizing performance,
+                or refining UI interactions, I focus on writing maintainable
+                code that delivers value to both users and teams.
               </p>
 
               <p className="text-justify sm:text-left">

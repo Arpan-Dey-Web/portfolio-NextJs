@@ -69,12 +69,18 @@ export default function Certificate() {
       <div className="relative z-10">
         {/* Enhanced Header Section */}
         <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
-          <div className="inline-flex items-center gap-2 mb-6">
-            <IoRibbon className="w-6 h-6 text-yellow-400 animate-pulse" />
-            <span className="text-sm sm:text-base uppercase tracking-widest text-yellow-400 font-semibold">
-              Achievements & Honors
-            </span>
-            <IoSparkles className="w-6 h-6 text-yellow-400 animate-pulse" />
+          <div className="relative inline-flex items-center gap-2 mb-6 border-2 border-yellow-500/50 rounded-full py-2.5 px-6 bg-gradient-to-r from-yellow-900/20 via-amber-900/20 to-yellow-900/20 backdrop-blur-sm shadow-lg shadow-yellow-500/20 hover:shadow-yellow-500/40 transition-all duration-300 hover:scale-105 group">
+            {/* Animated gradient background */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-500/10 via-amber-500/10 to-yellow-500/10 animate-pulse"></div>
+
+            {/* Content */}
+            <div className="relative flex items-center gap-2">
+              <IoRibbon className="w-5 h-5 text-yellow-400 animate-pulse group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-sm sm:text-base uppercase tracking-widest bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent font-bold">
+                Achievements & Honors
+              </span>
+              <IoSparkles className="w-5 h-5 text-yellow-400 animate-pulse group-hover:rotate-12 transition-transform duration-300" />
+            </div>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 animate-slide-up">
@@ -86,8 +92,6 @@ export default function Certificate() {
               Recognition
             </span>
           </h1>
-
-       
 
           <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-300 mt-4 sm:mt-6 max-w-3xl mx-auto px-4 animate-slide-up">
             Milestones in my learning journey and professional achievements

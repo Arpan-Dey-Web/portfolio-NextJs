@@ -18,7 +18,7 @@ import { HiDownload } from "react-icons/hi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
-
+  const [mounted, setMounted] = useState(false);
   // Update time every second
   useEffect(() => {
     const timer = setInterval(() => {
@@ -46,6 +46,8 @@ const Navbar = () => {
     });
   };
 
+  if (!mounted) return null; // 🔥 This prevents SSR time mismatch
+
   const navItems = [
     { name: "home", icon: FaHome, type: "scroll" },
     { name: "about", icon: FaUser, type: "scroll" },
@@ -53,7 +55,6 @@ const Navbar = () => {
     { name: "projects", icon: FaCode, type: "scroll" },
     { name: "certificate", icon: FaGraduationCap, type: "scroll" },
     { name: "contact", icon: FaEnvelope, type: "scroll" },
-   
   ];
 
   const scrollProps = {
@@ -162,22 +163,26 @@ const Navbar = () => {
           {/* Right Section: Time (Mobile) & Download Button */}
           <div className="flex items-center gap-3">
             {/* Current Time Display - Mobile/Tablet */}
-            <div className="flex xl:hidden items-center gap-2 px-3 py-2 bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700/50">
-              <FaClock className="w-3 h-3 text-blue-400" />
-              <span className="text-white text-xs sm:text-sm font-semibold tabular-nums">
-                {formatTime(currentTime).split(" ")[0]}
-              </span>
-            </div>
+
+            {typeof window !== "undefined" && (
+              <div className="flex xl:hidden items-center gap-2 px-3 py-2 bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700/50">
+                <FaClock className="w-3 h-3 text-blue-400" />
+                <span className="text-white text-xs sm:text-sm font-semibold tabular-nums">
+                  {formatTime(currentTime).split(" ")[0]}
+                </span>
+              </div>
+            )}
 
             {/* Current Time Display - Desktop */}
-            <div className="hidden xl:flex items-center gap-2 px-4 py-2 bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700/50">
-              <div className="flex flex-col">
-                <span className="text-white text-sm font-semibold tabular-nums">
-                  {formatTime(currentTime)}
+            {/* Current Time Display - Mobile/Tablet */}
+            {typeof window !== "undefined" && (
+              <div className="flex xl:hidden items-center gap-2 px-3 py-2 bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700/50">
+                <FaClock className="w-3 h-3 text-blue-400" />
+                <span className="text-white text-xs sm:text-sm font-semibold tabular-nums">
+                  {formatTime(currentTime).split(" ")[0]}
                 </span>
-                <span className="text-gray-400 text-xs"></span>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
@@ -202,7 +207,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     key={item.name}
-                    href={ "#"}
+                    href={"#"}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}

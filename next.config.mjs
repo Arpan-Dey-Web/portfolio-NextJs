@@ -1,14 +1,31 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-   
-    domains: [
-      "i.ibb.co.com",
-      "i.ibb.co",
-      "img.icons8.com",
-      "assets.vercel.com",
-      "avatars.githubusercontent.com",
-      "i.ibb.co.com/sdzgKkBD/github.webp",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+      },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co.com",
+      },
+      {
+        protocol: "https",
+        hostname: "img.icons8.com",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.vercel.com",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
     ],
   },
 };

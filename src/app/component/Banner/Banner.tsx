@@ -18,7 +18,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto w-11/12 gap-8 lg:gap-16">
+    <div className="py-10 lg:py-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto w-11/12 gap-8 lg:gap-16">
       {/* Text Content */}
       <div className="text-center md:text-left space-y-8 animate-fade-in">
         {/* Welcome Text */}
