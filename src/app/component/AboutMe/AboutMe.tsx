@@ -86,9 +86,9 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold  mb-8  sm:mb-6 merinda-font ">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-8 sm:mb-6 merinda-font">
             My{" "}
-            <span className="name-gradient inline-block  transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block transition-transform duration-300 cursor-default pb-2 leading-tight">
               Journey
             </span>
           </h2>

@@ -84,11 +84,11 @@ export default function Certificate() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold mb-6 animate-slide-up">
-            <span className="name-gradient inline-block transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block transition-transform duration-300 cursor-default pb-2 leading-tight">
               Certificate
             </span>{" "}
             <span className="text-white">&</span>{" "}
-            <span className="name-gradient inline-block  transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block transition-transform duration-300 cursor-default pb-2 leading-tight">
               Recognition
             </span>
           </h1>

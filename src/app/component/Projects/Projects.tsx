@@ -48,7 +48,7 @@ const Projects = () => {
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold merinda-font my-6 animate-slide-up">
             Featured{" "}
-            <span className="name-gradient inline-block  transition-transform duration-300 cursor-default">
+            <span className="name-gradient inline-block transition-transform duration-300 cursor-default pb-2 leading-tight">
               Projects
             </span>
           </h1>

@@ -19,6 +19,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
   const [mounted, setMounted] = useState(false);
+
+  // Set mounted to true after component mounts
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   // Update time every second
   useEffect(() => {
     const timer = setInterval(() => {
@@ -45,8 +51,6 @@ const Navbar = () => {
       day: "numeric",
     });
   };
-
-  if (!mounted) return null; // 🔥 This prevents SSR time mismatch
 
   const navItems = [
     { name: "home", icon: FaHome, type: "scroll" },
@@ -153,7 +157,7 @@ const Navbar = () => {
                 target="_blank"
                 className="text-gray-300 hover:text-white capitalize font-medium px-3 py-2 relative group cursor-pointer transition-all duration-300 flex items-center gap-2 rounded-lg hover:bg-gray-800/40 merinda-font"
               >
-                <FaFilePdf className="w-4 h-4 group-hover:scale-110 transition-transform" />{" "}
+                <FaFilePdf className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 Resume
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-3/4 transition-all duration-300 rounded-full"></span>
               </Link>
@@ -163,8 +167,7 @@ const Navbar = () => {
           {/* Right Section: Time (Mobile) & Download Button */}
           <div className="flex items-center gap-3">
             {/* Current Time Display - Mobile/Tablet */}
-
-            {typeof window !== "undefined" && (
+            {mounted && (
               <div className="flex xl:hidden items-center gap-2 px-3 py-2 bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700/50">
                 <FaClock className="w-3 h-3 text-blue-400" />
                 <span className="text-white text-xs sm:text-sm font-semibold tabular-nums">
@@ -174,13 +177,17 @@ const Navbar = () => {
             )}
 
             {/* Current Time Display - Desktop */}
-            {/* Current Time Display - Mobile/Tablet */}
-            {typeof window !== "undefined" && (
-              <div className="flex xl:hidden items-center gap-2 px-3 py-2 bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700/50">
-                <FaClock className="w-3 h-3 text-blue-400" />
-                <span className="text-white text-xs sm:text-sm font-semibold tabular-nums">
-                  {formatTime(currentTime).split(" ")[0]}
-                </span>
+            {mounted && (
+              <div className="hidden xl:flex items-center gap-3 px-4 py-2 bg-gray-800/40 backdrop-blur-sm rounded-lg border border-gray-700/50">
+                <FaClock className="w-4 h-4 text-blue-400 animate-pulse" />
+                <div className="flex flex-col">
+                  <span className="text-white text-sm font-semibold tabular-nums">
+                    {formatTime(currentTime)}
+                  </span>
+                  <span className="text-gray-400 text-xs">
+                    {formatDate(currentTime)}
+                  </span>
+                </div>
               </div>
             )}
           </div>
@@ -219,18 +226,30 @@ const Navbar = () => {
                 )
               )}
 
+              <Link
+                href="https://drive.google.com/file/d/1Md274D0IlTFRjrtSsAO7fOHxDPZdTBZn/view?usp=sharing"
+                target="_blank"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300 cursor-pointer group"
+              >
+                <FaFilePdf className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="capitalize font-medium">Resume</span>
+              </Link>
+
               {/* Mobile Time & Date Display */}
-              <div className="flex items-center justify-center gap-3 px-4 py-3 mt-4 bg-gray-800/40 rounded-lg border border-gray-700/50">
-                <FaClock className="w-5 h-5 text-blue-400 animate-pulse" />
-                <div className="flex flex-col items-center">
-                  <span className="text-white text-base font-semibold tabular-nums">
-                    {formatTime(currentTime)}
-                  </span>
-                  <span className="text-gray-400 text-xs">
-                    {formatDate(currentTime)}
-                  </span>
+              {mounted && (
+                <div className="flex items-center justify-center gap-3 px-4 py-3 mt-4 bg-gray-800/40 rounded-lg border border-gray-700/50">
+                  <FaClock className="w-5 h-5 text-blue-400 animate-pulse" />
+                  <div className="flex flex-col items-center">
+                    <span className="text-white text-base font-semibold tabular-nums">
+                      {formatTime(currentTime)}
+                    </span>
+                    <span className="text-gray-400 text-xs">
+                      {formatDate(currentTime)}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

@@ -8,7 +8,8 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import { IoSparkles } from "react-icons/io5";
-
+import { MdOutlineFullscreen } from "react-icons/md";
+import { ImageModal } from "../../components/ImageModal";
 type Project = {
   id: number;
   slug: string;
@@ -78,9 +79,19 @@ const SingleProject = ({ projectsid }) => {
   const router = useRouter();
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
-
   const [copiedField, setCopiedField] = useState(null);
 
+  // Modal state
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (img, idx) => {
+    setSelectedImage({
+      image: img,
+      name: `${project.projecttittle} - Screenshot ${idx + 1}`,
+    });
+    setModalOpen(true);
+  };
   const handleCopy = async (text, fieldId) => {
     try {
       await navigator.clipboard.writeText(text);
@@ -220,55 +231,6 @@ const SingleProject = ({ projectsid }) => {
               Back to Home
             </span>
           </motion.button>
-
-          {/* Enhanced Project Header */}
-          {/* <div className="flex flex-col md:flex-row items-start md:items-center  gap-6 sm:gap-8 mb-10   ">
-            {ProjectLogo && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="relative w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-2xl bg-gradient-to-br from-gray-800/60 to-gray-900/60 border border-gray-700/50 p-4 flex-shrink-0 backdrop-blur-md group"
-              >
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <Image
-                  src={ProjectLogo}
-                  alt={`${projecttittle} logo`}
-                  width={128}
-                  height={128}
-                  className="relative z-10 w-full h-full object-contain"
-                />
-              </motion.div>
-            )}
-            <div className="flex-1 ">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="inline-flex items-center gap-2 mb-4 px-5 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm rounded-full border border-blue-500/40 "
-              >
-                <IoSparkles className="w-4 h-4 text-blue-400 animate-pulse" />
-                <p className="text-xs sm:text-sm font-bold text-blue-300 tracking-widest ">
-                  PROJECT SHOWCASE
-                </p>
-              </motion.div>
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-5 leading-tight"
-              >
-                {projecttittle}
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-3xl"
-              >
-                {ProjectDescription}
-              </motion.p>
-            </div>
-          </div> */}
           {/* Project Overview Section */}
           <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
             <motion.div
@@ -616,6 +578,7 @@ const SingleProject = ({ projectsid }) => {
         </section>
 
         {/* Screenshots Gallery */}
+
         {ProjectBestPageImage?.length > 0 && (
           <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
             <div className="text-center mb-10">
@@ -636,7 +599,7 @@ const SingleProject = ({ projectsid }) => {
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 Project{" "}
-                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent pb-2 leading-tight inline-block">
                   Screenshots
                 </span>
               </h2>
@@ -644,6 +607,7 @@ const SingleProject = ({ projectsid }) => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
               </div>
             </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {ProjectBestPageImage.map((img, idx) => (
                 <motion.div
@@ -651,16 +615,29 @@ const SingleProject = ({ projectsid }) => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.1 }}
-                  className="group relative overflow-hidden rounded-2xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 bg-gray-900/50 backdrop-blur-sm"
+                  className="group relative overflow-hidden rounded-2xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 bg-gray-900/50 backdrop-blur-sm cursor-pointer"
+                  onClick={() => handleImageClick(img, idx)}
                 >
                   <Image
                     src={img}
-                    width={1000}
-                    height={1000}
+                    width={400}
+                    height={400}
                     alt={`${projecttittle} screenshot ${idx + 1}`}
-                    className="w-full h-full object-cover object-top rounded-2xl"
+                    className="w-full h-96 object-cover object-top rounded-2xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                  {/* Enhanced Hover Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <div className="flex flex-col items-center gap-3 transform group-hover:scale-110 transition-transform duration-300">
+                      <MdOutlineFullscreen className="w-16 h-16 text-white animate-pulse" />
+                      <span className="text-white font-bold text-lg">
+                        View Full Size
+                      </span>
+                      <span className="text-gray-300 text-sm">
+                        Click to zoom
+                      </span>
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -959,6 +936,12 @@ const SingleProject = ({ projectsid }) => {
           </section>
         )}
       </div>
+      <ImageModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        imageUrl={selectedImage?.image}
+        projectName={selectedImage?.name}
+      />
     </div>
   );
 };
