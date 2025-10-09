@@ -4,6 +4,7 @@ import Footer from "./component/Footer/Footer";
 import LenisProvider from "./Providers/LenisProviders";
 import ScrollToTopButton from "./component/ScrollTopButton/ScrollTopButton";
 import { Nunito, Merienda, Roboto, Fira_Code } from "next/font/google";
+import LoadingSpinner from "./loading";
 const nunito = Nunito({ subsets: ["latin"], weight: ["200", "400", "700"] });
 export const metadata = {
   title: "Portfolio | Arpan Dey",
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <Footer />
         {/* <ScrollToTopButton /> */}
       </body>
+     
     </html>
   );
 }

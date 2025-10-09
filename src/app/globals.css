@@ -233,7 +233,6 @@ body {
 button {
   border: none;
 }
-/* Add these animation styles to your existing global.css */
 
 /* Fade In Animation */
 @keyframes fade-in {
@@ -341,3 +340,4 @@ button {
 .delay-300 {
   animation-delay: 0.3s;
 }
+

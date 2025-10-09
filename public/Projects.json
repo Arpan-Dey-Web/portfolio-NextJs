@@ -9,7 +9,7 @@
         "role": "Full Stack MERN Developer",
         "teamSize": 1,
         "lastUpdated": "2025-01",
-        "ProjectLogo": "https://i.ibb.co/d4FJcpGW/Paw-s-Home-Logo-with-Vibrant-Compassionate-Design.png",
+        "ProjectLogo": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1760010434/Paw-s-Home-Logo-with-Vibrant-Compassionate-Design_jrsehy.png",
         "ProjectDescription": "PetAdopt is a dynamic and responsive web application built with the MERN stack that connects pet lovers with animals in need of forever homes. It empowers users to browse adoptable pets, request adoptions, create donation campaigns, and contribute to causes close to their hearts. Admins manage the platform efficiently through dedicated tools and analytics, while the design ensures accessibility, responsiveness, and aesthetic appeal.",
         "metaDescription": "Full-featured MERN stack pet adoption platform with donation campaigns, role-based dashboards, and Stripe payment integration.",
         "keywords": [
@@ -22,7 +22,7 @@
         ],
         "ProjectBannerImages": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1759949391/petcarebanner_rtxpwc.png",
         "ProjectBestPageImage": [
-            "https://i.ibb.co.com/b5NP4Gcm/screencapture-pawhome-netlify-app-2025-08-13-01-17-42.png",
+            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1760009512/pawhome-netlify-app-2025-10-09-17_30_06_kgrwgx.png",
             "https://i.ibb.co.com/fdcWLVsb/screencapture-pawhome-netlify-app-donations-2025-08-13-01-01-21.png",
             "https://i.ibb.co.com/rRQZZvCS/screencapture-pawhome-netlify-app-dashboard-2025-08-13-01-14-26.png",
             "https://i.ibb.co.com/SwsNjK4J/screencapture-pawhome-netlify-app-dashboard-admin-dashboard-2025-08-13-01-20-24.png"
@@ -410,7 +410,6 @@
             "AOS",
             "Netlify (Frontend)",
             "Vercel (Backend)"
-        
         ],
         "liveLink": "https://epiqdine.netlify.app/",
         "githubClient": "https://github.com/Arpan-Dey-Web/Resturent-food-project?tab=readme-ov-file",

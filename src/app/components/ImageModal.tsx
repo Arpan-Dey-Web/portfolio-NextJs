@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { BiZoomIn, BiZoomOut } from "react-icons/bi";
 import { MdOutlineFullscreen } from "react-icons/md";
+import Image from "next/image";
 
 export const ImageModal = ({ isOpen, onClose, imageUrl, projectName }) => {
   const [zoom, setZoom] = useState(1);
@@ -98,7 +99,9 @@ export const ImageModal = ({ isOpen, onClose, imageUrl, projectName }) => {
             className="relative transition-transform duration-300 ease-out"
             style={{ transform: `scale(${zoom})` }}
           >
-            <img
+            <Image
+              height={400}
+              width={400}
               src={imageUrl}
               alt={projectName}
               className="max-w-full h-auto rounded-lg shadow-2xl"
