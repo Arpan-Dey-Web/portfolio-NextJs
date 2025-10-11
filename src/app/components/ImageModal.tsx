@@ -100,8 +100,8 @@ export const ImageModal = ({ isOpen, onClose, imageUrl, projectName }) => {
             style={{ transform: `scale(${zoom})` }}
           >
             <Image
-              height={400}
-              width={400}
+              height={1400}
+              width={1400}
               src={imageUrl}
               alt={projectName}
               className="max-w-full h-auto rounded-lg shadow-2xl"

@@ -618,8 +618,8 @@ const SingleProject = ({ projectsid }) => {
                 >
                   <Image
                     src={img}
-                    width={400}
-                    height={400}
+                    width={1400}
+                    height={1400}
                     alt={`${projecttittle} screenshot ${idx + 1}`}
                     className="w-full h-96 object-cover object-top rounded-2xl"
                   />
