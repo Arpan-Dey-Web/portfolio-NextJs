@@ -6,10 +6,10 @@ import { SiGmail, SiWhatsapp } from "react-icons/si";
 import { FiMail, FiMapPin } from "react-icons/fi";
 import Link from "next/link";
 import { IoSparkles } from "react-icons/io5";
+import SocialLinks from "../../components/SocialLinks";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   const handleSmoothScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
@@ -34,40 +34,7 @@ const Footer = () => {
     { href: "/#contact", label: "Contact" },
   ];
 
-  const socialLinks = [
-    {
-      name: "LinkedIn",
-      icon: <FaLinkedinIn className="w-5 h-5" />,
-      href: "https://www.linkedin.com/in/arpan-dey-web",
-      hoverColor:
-        "hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-blue-500/20",
-      iconHoverColor: "group-hover:text-blue-400",
-    },
-    {
-      name: "GitHub",
-      icon: <FaGithub className="w-5 h-5" />,
-      href: "https://github.com/Arpan-Dey-Web",
-      hoverColor:
-        "hover:border-purple-500/70 hover:bg-purple-500/10 hover:shadow-purple-500/20",
-      iconHoverColor: "group-hover:text-white",
-    },
-    {
-      name: "Gmail",
-      icon: <SiGmail className="w-5 h-5" />,
-      href: "mailto:arpandey.web@gmail.com",
-      hoverColor:
-        "hover:border-red-500/70 hover:bg-red-500/10 hover:shadow-red-500/20",
-      iconHoverColor: "group-hover:text-red-400",
-    },
-    {
-      name: "WhatsApp",
-      icon: <SiWhatsapp className="w-5 h-5" />,
-      href: "https://wa.me/8801821524847",
-      hoverColor:
-        "hover:border-green-500/70 hover:bg-green-500/10 hover:shadow-green-500/20",
-      iconHoverColor: "group-hover:text-green-400",
-    },
-  ];
+
 
   return (
     <div className="relative bg-gradient-to-b from-gray-950 via-[#0f0a1f] to-[#1a1033] border-t border-gray-800/50 overflow-hidden">
@@ -166,25 +133,8 @@ const Footer = () => {
             </div>
 
             {/* Enhanced Social Links */}
-            <div className="flex gap-3 pt-2">
-              {socialLinks.map((social, index) => (
-                <Link
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`group w-12 h-12 rounded-xl bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 ${social.hoverColor} flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:-translate-y-1`}
-                  title={social.name}
-                  aria-label={social.name}
-                >
-                  <div
-                    className={`text-gray-400 ${social.iconHoverColor} transition-colors`}
-                  >
-                    {social.icon}
-                  </div>
-                </Link>
-              ))}
-            </div>
+
+            <SocialLinks />
           </div>
         </div>
 

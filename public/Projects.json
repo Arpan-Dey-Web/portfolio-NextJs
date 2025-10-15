@@ -72,7 +72,7 @@
         "githubServer": "https://github.com/Arpan-Dey-Web/PetCare-Project-Server-Side",
         "demoCredentials": {
             "admin": {
-                "email": "admin@pawhome.com",
+                "email": "admin@gmail.com",
                 "password": "Admin@123",
                 "note": "Full access to admin dashboard and all features"
             },
