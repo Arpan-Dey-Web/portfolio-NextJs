@@ -11,11 +11,13 @@ import {
   FiUser,
   FiMessageSquare,
 } from "react-icons/fi";
+
+import { SiWhatsapp, SiX } from "react-icons/si"; // Import X, Gmail, WhatsApp
 import { FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoSparkles, IoChatbubbleEllipses } from "react-icons/io5";
 import Image from "next/image";
-import bannerImage from "../../../../public/bannerImage.png"
+import bannerImage from "../../../../public/bannerImage.png";
 const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
 const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
@@ -79,7 +81,7 @@ const ContactPage: React.FC = () => {
     {
       name: "LinkedIn",
       icon: <FaLinkedinIn className="w-5 h-5" />,
-      href: "https://www.linkedin.com/in/arpan-dey-web",
+      href: "https://www.linkedin.com/in/arpan-dey-web47",
       color:
         "hover:border-blue-500/70 hover:bg-blue-500/10 hover:shadow-blue-500/20",
       iconColor: "group-hover:text-blue-400",
@@ -91,6 +93,14 @@ const ContactPage: React.FC = () => {
       color:
         "hover:border-purple-500/70 hover:bg-purple-500/10 hover:shadow-purple-500/20",
       iconColor: "group-hover:text-white",
+    },
+    {
+      name: "Twitter",
+      icon: <SiX className="w-5 h-5" />,
+      href: "https://x.com/arpandeyweb",
+      color:
+        "hover:border-neutral-500/70 hover:bg-neutral-800/20 hover:shadow-neutral-500/20", // ✨ Sleek black-gray tone
+      iconColor: "group-hover:text-neutral-300", // Subtle gray-white shine
     },
     {
       name: "Gmail",
@@ -207,7 +217,7 @@ const ContactPage: React.FC = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group/social w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 ${social.color} flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg`}
+                    className={`group/social w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 ${social.color} flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg`}
                     title={social.name}
                     aria-label={social.name}
                   >

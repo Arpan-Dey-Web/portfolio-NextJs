@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SiWhatsapp, SiGmail, SiX } from "react-icons/si"; // Import X, Gmail, WhatsApp
+import { SiWhatsapp, SiGmail, SiX } from "react-icons/si";
 
 export default function SocialLinks() {
   return (
     <div className="flex gap-4 justify-center md:justify-start">
-      {/* linkedin */}
+      {/* LinkedIn */}
       <Link
         href="https://www.linkedin.com/in/arpan-dey-web47"
         target="_blank"
@@ -15,7 +15,7 @@ export default function SocialLinks() {
         title="LinkedIn"
         aria-label="LinkedIn"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-cyan-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         <FaLinkedinIn className="relative z-10 w-5 h-5 text-gray-400 group-hover:text-blue-400 transition-colors" />
       </Link>
 
@@ -37,13 +37,14 @@ export default function SocialLinks() {
         href="https://x.com/arpandeyweb"
         target="_blank"
         rel="noopener noreferrer"
-        className="group relative w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-sky-400/70 flex items-center justify-center transition-all duration-300 hover:scale-110 overflow-hidden"
+        className="group relative w-12 h-12 rounded-full bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-neutral-400/70 flex items-center justify-center transition-all duration-300 hover:scale-110 overflow-hidden"
         title="Twitter"
         aria-label="Twitter"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-400/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        <SiX className="relative z-10 w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors" />
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-500/20 to-zinc-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <SiX className="relative z-10 w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
       </Link>
+
       {/* Gmail */}
       <Link
         href="mailto:arpandey.web@gmail.com"
