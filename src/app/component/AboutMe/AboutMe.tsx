@@ -60,7 +60,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="px-4 sm:px-6 lg:px-8 rounded-2xl mx-auto max-w-7xl w-11/12 relative overflow-hidden"
+      className="  rounded-2xl mx-auto max-w-7xl  relative overflow-hidden"
       aria-label="About Me Section"
     >
       {/* Animated Background Elements */}
@@ -69,9 +69,9 @@ const AboutMe = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow animation-delay-200"></div>
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 ">
         {/* Header Section */}
-        <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in">
+        <header className="text-center mb-12 sm:mb-16 lg:mb-20 animate-fade-in ">
           <div className="relative inline-flex items-center gap-2 mb-4 border-2 border-purple-500/50 rounded-full py-2 px-6 bg-purple-900/20 backdrop-blur-sm shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
             {/* Animated gradient background */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-purple-500/10 animate-pulse"></div>
@@ -98,7 +98,7 @@ const AboutMe = () => {
           </p>
         </header>
 
-        <article className="max-w-5xl mx-auto space-y-8 sm:space-y-12">
+        <article className=" space-y-8 sm:space-y-12">
           {/* Main Profile Card */}
           <div className="group bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 animate-slide-up">
             {/* Decorative corner accents */}
@@ -114,7 +114,7 @@ const AboutMe = () => {
             </div>
 
             {/* Main Content */}
-            <div className="space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl text-gray-300 merinda-font leading-relaxed">
+            <div className="space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl text-gray-300 merinda-font leading-relaxed ">
               <p className="text-justify sm:text-left">
                 {`I'm`}{" "}
                 <span className="font-bold name-gradient text-xl sm:text-2xl">
@@ -160,7 +160,7 @@ const AboutMe = () => {
             {highlights.map((item, index) => (
               <div
                 key={index}
-                className="group relative bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700/50 hover:border-gray-600/80 transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden"
+                className="group relative bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700/50 l overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Gradient overlay on hover */}

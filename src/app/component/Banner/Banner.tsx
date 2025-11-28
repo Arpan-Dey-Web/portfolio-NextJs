@@ -6,7 +6,7 @@ import Link from "next/link";
 import ProfileWithTechStack from "../../components/Bannerimage";
 import SocialLinks from "../../components/SocialLinks";
 import { FaLightbulb } from "react-icons/fa";
-
+import {LuZap, LuBrainCircuit, LuRocket} from "react-icons/lu";
 const Banner = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -34,10 +34,9 @@ const Banner = () => {
             </span>
           </h1>
         </div>
-
         {/* Typewriter Effect */}
         <div className="text-2xl md:text-4xl min-h-[3rem] md:min-h-[4rem]">
-          <span className="font-bold merinda-font name-gradient">
+          <span className="font-bold merinda-font">
             <Typewriter
               words={[
                 "Frontend Developer",
@@ -46,8 +45,8 @@ const Banner = () => {
               ]}
               loop={false}
               cursor
-              cursorStyle="|"
-              cursorColor="#4d79ff"
+              cursorStyle=""
+              cursorColor=""
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={2000}
@@ -57,20 +56,23 @@ const Banner = () => {
 
         {/* Taglines with Animation */}
         <div className="text-base md:text-lg text-gray-300/90 max-w-xl nunito-font space-y-3">
-          <p className="hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default">
-            ⚡ Build. Break. Learn. Repeat
+          <p className="flex items-center gap-2 hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default">
+            <LuZap className="text-white/80" />
+            Build. Break. Learn. Repeat.
           </p>
-          <p className="hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default delay-100">
-            💭 Think In Logic, Speak In Design, Dream In Code
+
+          <p className="flex items-center gap-2 hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default delay-100">
+            <LuBrainCircuit className="text-white/80" />
+            Think in Logic, Speak in Design, Dream in Code.
           </p>
-          <p className="hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default delay-200">
-            🚀 A Developer Not By Title, But By Mindset
+
+          <p className="flex items-center gap-2 hover:text-white hover:translate-x-2 transition-all duration-300 cursor-default delay-200">
+            <LuRocket className="text-white/80" />A Developer — Not by Title,
+            but by Mindset.
           </p>
         </div>
-
         {/* Social Links with Enhanced Styling */}
-        <SocialLinks/>
-
+        <SocialLinks />
         {/* Enhanced CTA Buttons */}
         <div className="flex gap-4 md:gap-6 flex-wrap justify-center md:justify-start pt-2">
           <button
