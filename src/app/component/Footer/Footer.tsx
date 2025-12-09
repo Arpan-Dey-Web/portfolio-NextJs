@@ -39,19 +39,19 @@ const Footer = () => {
   return (
     <div className="relative bg-gradient-to-b from-gray-950 via-[#0f0a1f] to-[#1a1033] border-t border-gray-800/50 overflow-hidden">
       {/* Enhanced decorative top border */}
-      <div className="absolute top-0 left-0 right-0 h-px">
+      <div className="absolute top-0 left-0 right-0 h-px ">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent blur-sm"></div>
       </div>
 
       {/* Enhanced Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none ">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse-slow animation-delay-200"></div>
         <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl animate-pulse-slow animation-delay-400"></div>
       </div>
 
-      <footer className="relative z-10 max-w-7xl w-11/12 mx-auto py-12 sm:py-16 lg:py-20">
+      <footer className="relative z-10 max-w-7xl w-11/12 mx-auto py-12 sm:py-16 lg:py-20 ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 mb-12">
           {/* Enhanced Logo & About Section */}
           <div className="flex flex-col items-center md:items-start space-y-6">

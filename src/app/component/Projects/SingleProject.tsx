@@ -663,7 +663,7 @@ const SingleProject = ({ projectsid }) => {
         )}
 
         {/* Performance Metrics */}
-        {metrics && <Metrics metrics={metrics} />}
+        {metrics && <Metrics metrics={metrics}  />}
 
         {/* Future Plans */}
         {futurePlans?.length > 0 && <FuturePlans futurePlans={futurePlans} />}
