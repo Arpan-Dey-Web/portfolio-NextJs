@@ -1,22 +1,32 @@
 [
     {
         "id": 1,
+        "skillName": "NodeJS",
+        "skillImage": "https://i.ibb.co.com/Y4F0t07R/download.png"
+    },
+    {
+        "id": 2,
         "skillName": "Express",
         "skillImage": "https://i.ibb.co.com/gZKgCP5G/download-1.png"
     },
     {
-        "id": 2,
+        "id": 3,
+        "skillName": "PostgreSQL",
+        "skillImage": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1767830597/elephant_uh0gmn.png"
+    },
+    {
+        "id": 4,
+        "skillName": "Prisma",
+        "skillImage": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1767830407/prisma-3_jvddry.svg"
+    },
+    {
+        "id": 5,
         "skillName": "MongoDB",
         "skillImage": "https://i.ibb.co.com/6R6BMKjY/images.png"
     },
     {
-        "id": 3,
+        "id": 6,
         "skillName": "Firebase",
         "skillImage": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
-    },
-    {
-        "id": 4,
-        "skillName": "NodeJS",
-        "skillImage": "https://i.ibb.co.com/Y4F0t07R/download.png"
     }
 ]

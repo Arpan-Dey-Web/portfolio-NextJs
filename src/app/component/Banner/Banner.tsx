@@ -8,15 +8,7 @@ import SocialLinks from "../../components/SocialLinks";
 import { FaLightbulb } from "react-icons/fa";
 import {LuZap, LuBrainCircuit, LuRocket} from "react-icons/lu";
 const Banner = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.setAttribute("download", "ArpanDey_Resume.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
+  
   return (
     <div className="py-10 lg:py-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto w-11/12 gap-8 lg:gap-16">
       {/* Text Content */}
@@ -107,7 +99,7 @@ const Banner = () => {
 
       {/* Profile Image with Enhanced Effects */}
       <div className="relative w-fit mx-auto md:mx-0 animate-float">
-        <div className="absolute -inset-4 bg-gradient-to-r from-[#4d79ff] via-[#ff2d75] to-[#4d79ff] rounded-full opacity-30 blur-2xl animate-pulse-slow" />
+        <div/>
         <div className="relative">
           <ProfileWithTechStack />
         </div>
