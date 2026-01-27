@@ -13,7 +13,6 @@ import {
   FaClock,
 } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa";
-import { HiDownload } from "react-icons/hi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -150,10 +149,10 @@ const Navbar = () => {
                     {/* Active indicator */}
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-3/4 transition-all duration-300 rounded-full"></span>
                   </Link>
-                )
+                ),
               )}
               <Link
-                href="https://drive.google.com/file/d/1Md274D0IlTFRjrtSsAO7fOHxDPZdTBZn/view?usp=sharing"
+                href="https://drive.google.com/file/d/1GfXlNM_rKondw5LGoPz06NsGiXjAmYYj/view?usp=sharing"
                 target="_blank"
                 className="text-gray-300 hover:text-white capitalize font-medium px-3 py-2 relative group cursor-pointer transition-all duration-300 flex items-center gap-2 rounded-lg hover:bg-gray-800/40 merinda-font"
               >
@@ -223,7 +222,7 @@ const Navbar = () => {
                     <item.icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
                     <span className="capitalize font-medium">{item.name}</span>
                   </Link>
-                )
+                ),
               )}
 
               <Link
