@@ -173,9 +173,9 @@
         "status": "Completed",
         "featured": true,
         "role": "Full Stack MERN Developer",
-        "teamSize": 5,
+        "teamSize": 1,
         "lastUpdated": "2025-01",
-        "ProjectLogo": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1760010434/Paw-s-Home-Logo-with-Vibrant-Compassionate-Design_jrsehy.png",
+        "ProjectLogo": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1771904531/petcarelogo_fpabmx.png",
         "ProjectDescription": "Job Flow is an AI-powered web application designed to simplify and optimize the job application process. It helps users track applications, analyze resumes, and intelligently match job descriptions with required skills. Built with Next.js, TypeScript, Prisma, Supabase, and the OpenAI API, Job Flow combines modern technologies with AI to make your job search smarter.",
         "metaDescription": "Full-featured Full stack pet adoption platform with donation campaigns, role-based dashboards, and Stripe payment integration.",
         "keywords": [
@@ -186,12 +186,12 @@
             "Stripe",
             "Donation Platform"
         ],
-        "ProjectBannerImages": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1759949391/petcarebanner_rtxpwc.png",
+        "ProjectBannerImages": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1772287489/Screenshot_2026-02-24_15-29-44_quhucs.png",
         "ProjectBestPageImage": [
-            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1759949391/petcarebanner_rtxpwc.png",
-            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1760190495/Screenshot_2025-10-10_203201_c4siss.png",
-            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1760190486/Screenshot_2025-10-10_203042_dmxvsl.png",
-            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1760190485/Screenshot_2025-10-10_202204_vyne54.png"
+            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1772287489/Screenshot_2026-02-24_15-29-44_quhucs.png",
+            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1772287486/Screenshot_2026-02-24_15-32-34_i8pair.png",
+            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1772287486/Screenshot_2026-02-24_15-32-18_ltocmo.png",
+            "https://res.cloudinary.com/dioe6nj4y/image/upload/v1772287486/Screenshot_2026-02-24_15-31-04_nwnvci.png"
         ],
         "screenshots": [
             {
@@ -799,14 +799,14 @@
             "Responsive UI with animations and polished interactions",
             "Implemented protected routes and auto-login"
         ],
-       "metrics": {
-        "performanceScore": "88/100",
-        "accessibilityScore": "92/100",
-        "bestPracticesScore": "90/100",
-        "seoScore": "85/100",
-        "pageLoadTime": "1.6s",
-        "firstContentfulPaint": "1.1s"
-    },
+        "metrics": {
+            "performanceScore": "88/100",
+            "accessibilityScore": "92/100",
+            "bestPracticesScore": "90/100",
+            "seoScore": "85/100",
+            "pageLoadTime": "1.6s",
+            "firstContentfulPaint": "1.1s"
+        },
         "futurePlans": [
             "Add live event booking and payment integration",
             "Role-based access for event organizers and admin",

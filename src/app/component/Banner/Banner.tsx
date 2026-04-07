@@ -31,9 +31,10 @@ const Banner = () => {
           <span className="font-bold merinda-font">
             <Typewriter
               words={[
+                "Full Stack Developer",
                 "Frontend Developer",
-                "React Developer",
-                "MERN Stack Developer",
+                "Backend Developer",
+                "MERN & PERN Stack Developer",
               ]}
               loop={false}
               cursor
@@ -84,7 +85,7 @@ const Banner = () => {
           </button>
 
           <Link
-            href="https://drive.google.com/file/d/1Md274D0IlTFRjrtSsAO7fOHxDPZdTBZn/view?usp=sharing"
+            href="https://drive.google.com/file/d/1GfXlNM_rKondw5LGoPz06NsGiXjAmYYj/view"
             target="_blank"
             className="group relative rounded-full text-[#DE2A8A] px-8 md:px-14 py-3 md:py-4 text-lg md:text-xl font-medium border-2 border-[#DE2A8A] bg-transparent overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(222,42,138,0.3)] active:scale-95"
           >
@@ -99,7 +100,7 @@ const Banner = () => {
 
       {/* Profile Image with Enhanced Effects */}
       <div className="relative w-fit mx-auto md:mx-0 animate-float">
-        <div/>
+        <div />
         <div className="relative">
           <ProfileWithTechStack />
         </div>

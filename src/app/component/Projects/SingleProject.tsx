@@ -313,7 +313,7 @@ const SingleProject = ({ projectsid }) => {
                     </button>
                   </Link>
                 )}
-                {githubServer && (
+                {/* {githubServer && (
                   <Link
                     href={githubServer}
                     target="_blank"
@@ -324,7 +324,7 @@ const SingleProject = ({ projectsid }) => {
                       <span className="font-semibold">Server Code</span>
                     </button>
                   </Link>
-                )}
+                )} */}
               </motion.div>
             </motion.div>
           </section>
@@ -596,7 +596,7 @@ const SingleProject = ({ projectsid }) => {
                 </svg>
               </div>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                Project{" "}
+                Project
                 <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent pb-2 leading-tight inline-block">
                   Screenshots
                 </span>

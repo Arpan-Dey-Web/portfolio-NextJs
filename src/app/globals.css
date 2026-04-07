@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 @import "tailwindcss";
-@plugin "daisyui";
+/* @plugin "daisyui"; */
 
 html,
 body {
@@ -14,8 +14,12 @@ body {
 .merinda-font {
   font-family: "Merienda", cursive;
 }
+/* Replace your .background and .card styles */
+
+
+
 /* Background & Base Colors */
-.background {
+/* .background {
   background: #020617;
   background-image: linear-gradient(
       to right,
@@ -29,7 +33,7 @@ body {
       transparent 70%
     );
   background-size: 32px 32px, 32px 32px, 100% 100%;
-}
+} */
 
 .name-gradient {
   background: linear-gradient(90deg, #4d79ff, #ff2d75);
@@ -340,4 +344,5 @@ button {
 .delay-300 {
   animation-delay: 0.3s;
 }
+
 
