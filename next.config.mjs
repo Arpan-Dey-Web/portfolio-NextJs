@@ -26,6 +26,22 @@ const nextConfig = {
         protocol: "https",
         hostname: "avatars.githubusercontent.com",
       },
+      {
+        protocol: "https",
+        hostname: "logowik.com",
+      },
+      {
+        protocol: "https",
+        hostname: "miro.medium.com",
+      },
+      {
+        protocol: "https",
+        hostname: "zonalogo.com",
+      },
+      {
+        protocol: "https",
+        hostname: "icon2.cleanpng.com",
+      }
     ],
   },
 };

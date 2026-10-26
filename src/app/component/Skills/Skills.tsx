@@ -79,71 +79,38 @@ const Skills = () => {
           </p>
         </header>
 
-        {/* Enhanced Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+        {/* Skills Sections - Vertical Layout */}
+        <div className="flex flex-col gap-10 sm:gap-12 lg:gap-14">
           {skillCategories.map((skill, index) => (
             <article
               key={skill.title}
-              className={`group relative flex flex-col text-center rounded-2xl sm:rounded-3xl bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-md border border-gray-700/50 hover:${
-                skill.borderColor
-              } transition-all duration-500 overflow-hidden hover:shadow-2xl hover:${
-                skill.shadowColor
-              } hover:-translate-y-2 py-8 sm:py-10 px-4 sm:px-6 ${
-                skill.colSpan || ""
-              }`}
+              className="relative flex flex-col rounded-2xl sm:rounded-3xl  p-6 sm:p-8 lg:p-10"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Gradient overlay on hover */}
+              {/* Gradient Overlay */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${skill.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
-              ></div>
+                className={`absolute inset-0 bg-gradient-to-br ${skill.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}
+              />
 
-              {/* Decorative corner accents */}
-              <div
-                className={`absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 ${skill.borderColor} rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-              ></div>
-              <div
-                className={`absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 ${skill.borderColor} rounded-br-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-              ></div>
-
-              {/* Enhanced Icon/Badge */}
-              <div className="relative z-10">
+              {/* Section Header */}
+              <div className="relative z-10 flex gap-5 items-center">
                 <div
-                  className={`mb-6 mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${skill.bgGradient} border ${skill.borderColor} flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg`}
+                  className={`mb-4 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br ${skill.bgGradient} border ${skill.borderColor} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
                 >
-                  <div
-                    className={`${skill.iconColor} group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    {skill.icon}
-                  </div>
-                  {/* Glow effect */}
-                  <div
-                    className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${skill.gradient} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}
-                  ></div>
+                  <span className={skill.iconColor}>{skill.icon}</span>
                 </div>
 
                 <h2
-                  className={`text-3xl sm:text-4xl font-extrabold merinda-font mb-6 sm:mb-8 bg-gradient-to-r ${skill.gradient} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300`}
+                  className={`text-2xl sm:text-3xl lg:text-4xl font-extrabold merinda-font mb-4 bg-gradient-to-r ${skill.gradient} bg-clip-text text-transparent`}
                 >
                   {skill.title}
                 </h2>
-
-                {/* Enhanced Divider */}
-                <div className="relative w-7/12 sm:w-6/12 h-px mx-auto mb-8">
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-r from-transparent ${skill.dividerColor} to-transparent`}
-                  ></div>
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-r from-transparent ${skill.dividerColor} to-transparent blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                  ></div>
-                </div>
-
-                {/* Skills Content */}
-                <div className="flex-1 relative z-10">{skill.component}</div>
               </div>
 
-              {/* Shine effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 pointer-events-none"></div>
+              {/* Skills Content */}
+              <div className="relative z-10 w-full">
+                {skill.component}
+              </div>
             </article>
           ))}
         </div>

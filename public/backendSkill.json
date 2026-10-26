@@ -11,22 +11,44 @@
     },
     {
         "id": 3,
+        "skillName": "NestJS",
+        "skillImage": "https://logowik.com/content/uploads/images/nestjs-node-js1721157583.logowik.com.webp"
+    },
+    
+    {
+        "id": 4,
+        "skillName": "Prisma",
+        "skillImage": "https://img.icons8.com/color/1200/prisma-orm.jpg"
+    },
+    {
+        "id": 5,
         "skillName": "PostgreSQL",
         "skillImage": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1767830597/elephant_uh0gmn.png"
     },
     {
-        "id": 4,
-        "skillName": "Prisma",
-        "skillImage": "https://res.cloudinary.com/dioe6nj4y/image/upload/v1767830407/prisma-3_jvddry.svg"
-    },
+        "id": 6,
+        "skillName": "Mongoose",
+        "skillImage": "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*E8YUEkpBCcoipF7JwvbwSA.png"
+    },  
     {
-        "id": 5,
+        "id": 7,
         "skillName": "MongoDB",
         "skillImage": "https://i.ibb.co.com/6R6BMKjY/images.png"
     },
     {
-        "id": 6,
+        "id": 8,
         "skillName": "Firebase",
         "skillImage": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+    },
+    {
+        "id": 9,
+        "skillName": "Redis",
+        "skillImage": "https://zonalogo.com/assets/redis-logo-png-svg.webp"
+    },
+    {
+        "id": 10,
+        "skillName": "AWS",
+        "skillImage": "https://icon2.cleanpng.com/20180817/vog/8968d0640f2c4053333ce7334314ef83.webp"
     }
+  
 ]

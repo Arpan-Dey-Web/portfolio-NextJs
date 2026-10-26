@@ -3,38 +3,6 @@ import { FaCode, FaLightbulb, FaRocket } from "react-icons/fa";
 import { IoSparkles } from "react-icons/io5";
 
 const AboutMe = () => {
-  const interests = [
-    {
-      name: "MERN Stack",
-      icon: "💻",
-      color: "from-green-500/20 to-emerald-500/20 border-green-500/40",
-    },
-    {
-      name: "ReactJS",
-      icon: "⚛️",
-      color: "from-blue-500/20 to-cyan-500/20 border-blue-500/40",
-    },
-    {
-      name: "UI/UX",
-      icon: "🎨",
-      color: "from-purple-500/20 to-pink-500/20 border-purple-500/40",
-    },
-    {
-      name: "Full Stack",
-      icon: "🌐",
-      color: "from-orange-500/20 to-red-500/20 border-orange-500/40",
-    },
-    {
-      name: "Cricket",
-      icon: "🏏",
-      color: "from-yellow-500/20 to-amber-500/20 border-yellow-500/40",
-    },
-    {
-      name: "Football",
-      icon: "⚽",
-      color: "from-indigo-500/20 to-blue-500/20 border-indigo-500/40",
-    },
-  ];
 
   const highlights = [
     {
@@ -114,7 +82,8 @@ const AboutMe = () => {
             </div>
 
             {/* Main Content */}
-            <div className="space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl text-gray-300 merinda-font leading-relaxed ">
+
+            <div className="space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl text-gray-300 merinda-font leading-relaxed">
               <p className="text-justify sm:text-left">
                 {`I'm`}{" "}
                 <span className="font-bold name-gradient text-xl sm:text-2xl">
@@ -122,15 +91,14 @@ const AboutMe = () => {
                 </span>
                 , a passionate and detail-oriented{" "}
                 <span className="font-semibold text-white relative inline-block group/text">
-                  MERN Stack Developer
+                  Full Stack Developer
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 group-hover/text:w-full transition-all duration-500"></span>
                 </span>{" "}
-                who thrives on building clean, scalable, and user-centered web
-                applications. What began as simple HTML and CSS experiments has
-                evolved into a full-fledged journey of crafting seamless digital
-                experiences with{" "}
+                who enjoys building clean, scalable, and user-centered web applications.
+                What began as simple HTML and CSS experiments has evolved into a journey
+                of crafting seamless digital experiences using{" "}
                 <span className="font-semibold text-white relative inline-block group/text">
-                  ReactJS, Node.js, and modern frontend technologies
+                  React, Next.js, TypeScript, Node.js, and modern web technologies
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-orange-500 group-hover/text:w-full transition-all duration-500"></span>
                 </span>
                 .
@@ -138,21 +106,20 @@ const AboutMe = () => {
 
               <p className="text-justify sm:text-left">
                 I enjoy turning complex ideas into intuitive, high-performance
-                interfaces that blend functionality with visual elegance.
-                Whether {` it's`} integrating REST APIs, optimizing performance,
-                or refining UI interactions, I focus on writing maintainable
-                code that delivers value to both users and teams.
+                applications that combine functionality with thoughtful design.
+                From building responsive user interfaces to developing backend APIs,
+                integrating databases, and implementing authentication, I focus on
+                writing maintainable code and delivering reliable solutions.
               </p>
 
               <p className="text-justify sm:text-left">
-                Outside of development, I find inspiration through exploring new
-                cuisines, playing cricket, and photography—activities that help
-                me stay creative and balanced. Driven by curiosity and
-                continuous learning, I aim to create technology that not only
-                works efficiently but also connects with people in meaningful
-                ways.
+                Outside of development, I enjoy exploring new cuisines, playing cricket,
+                and photography—activities that help me stay creative and balanced.
+                Driven by curiosity and continuous learning, I aim to build meaningful
+                technology that solves real-world problems and creates value for users.
               </p>
             </div>
+
           </div>
 
           {/* Highlights Grid */}
@@ -185,29 +152,6 @@ const AboutMe = () => {
             ))}
           </div>
 
-          {/* Interests Tags with Enhanced Styling */}
-          <div className="bg-gradient-to-br from-gray-800/20 to-gray-900/20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-700/30">
-            <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8 text-white merinda-font">
-              Interests & <span className="name-gradient">Passions</span>
-            </h3>
-            <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
-              {interests.map((item, index) => (
-                <div
-                  key={index}
-                  className={`group relative px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-br ${item.color} backdrop-blur-sm rounded-xl border hover:scale-110 transition-all duration-300 cursor-default overflow-hidden`}
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  {/* Shine effect on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-
-                  <span className="relative flex items-center gap-2 text-sm sm:text-base font-semibold text-white">
-                    <span className="text-lg sm:text-xl">{item.icon}</span>
-                    {item.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
 
           {/* Bottom Decorative Element */}
           <div className="flex justify-center pt-4 sm:pt-8">

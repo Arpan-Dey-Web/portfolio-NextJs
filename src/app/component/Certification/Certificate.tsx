@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import certificateImage from "../../../../public/certificate.png";
+import Level1certificateImage from "../../../../public/level1.png";
+import Level2certificateImage from "../../../../public/level2.png";
 import blackBeltImage from "../../../../public/BlackBelt.png";
 import { IoSparkles, IoTrophy, IoRibbon } from "react-icons/io5";
 import { HiAcademicCap, HiShieldCheck } from "react-icons/hi";
@@ -9,8 +10,33 @@ export default function Certificate() {
   const certificates = [
     {
       id: 1,
-      title: "Full Stack MERN Certificate",
-      image: certificateImage,
+      title: "MERN Stack",
+      image: Level1certificateImage,
+      badge: "TECHNICAL EXCELLENCE",
+      badgeGradient: "from-yellow-500/20 to-orange-500/20",
+      badgeBorder: "border-yellow-500/40",
+      badgeText: "text-yellow-300",
+      ringColor: "group-hover:ring-yellow-500/50",
+      shadowColor: "hover:shadow-yellow-500/10",
+      icon: <HiAcademicCap className="w-5 h-5" />,
+      iconColor: "text-yellow-500",
+      footerText: "Verified Certification",
+      footerIcon: (
+        <svg
+          className="w-5 h-5 text-yellow-500"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ),
+      gradientOverlay: "from-yellow-500/10 to-orange-500/10",
+    },
+
+    {
+      id: 2,
+      title: "Full Stack",
+      image: Level2certificateImage,
       badge: "TECHNICAL EXCELLENCE",
       badgeGradient: "from-yellow-500/20 to-orange-500/20",
       badgeBorder: "border-yellow-500/40",
@@ -59,6 +85,7 @@ export default function Certificate() {
       ),
       gradientOverlay: "from-green-500/10 to-emerald-500/10",
     },
+   
   ];
 
   return (
